@@ -1464,6 +1464,13 @@ export function App() {
 						<Text size="sm">
 							産総研地質調査総合センター・国土地理院・地震調査研究推進本部・海上保安庁の資料をもとに、Watson496が加工・推定したモデルです。各機関の公式モデルではありません。
 						</Text>
+						<a
+							href="https://github.com/Watson496/awaji-geology-3d"
+							target="_blank"
+							rel="noreferrer"
+						>
+							GitHubリポジトリ
+						</a>
 						<a href={dataUrl("ATTRIBUTION.md")} target="_blank" rel="noreferrer">データの出典・加工内容・利用条件</a>
 						<a href={dataUrl("LICENSE-SOFTWARE.txt")} target="_blank" rel="noreferrer">ソフトウェアのライセンス（MIT）</a>
 						<a href={dataUrl("THIRD_PARTY_NOTICES.txt")} target="_blank" rel="noreferrer">依存ライブラリのライセンス</a>
