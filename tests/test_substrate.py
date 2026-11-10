@@ -16,7 +16,7 @@ class SubstrateInferenceTests(unittest.TestCase):
   one=fields[1].reshape(rock.shape);two=fields[2].reshape(rock.shape)
   self.assertGreater(one[2,0,1],two[2,0,1]);self.assertGreater(two[6,0,1],one[6,0,1])
   self.assertGreater(one[4,0,1]+two[4,0,1],.2)
-  # A true substrate outcrop is still an exact one-hot constraint.
+  # 基盤の露頭は、引き続き厳密なone-hot制約とする。
   self.assertEqual(one[0,0,3],1);self.assertEqual(two[0,0,3],0)
  def test_closed_fault_is_not_a_shortcut_to_an_outcrop(self):
   rock=np.ones((6,1,3),bool);closed=[np.zeros((5,1,3),bool),np.zeros((6,0,3),bool),np.zeros((6,1,2),bool)];closed[0][2]=True

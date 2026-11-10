@@ -26,7 +26,7 @@ try {
 	await page.goto("http://127.0.0.1:4173");
 	await page.waitForFunction(() => window.__awaji?.ready);
 	await openPanelSections(page);
-	// The interaction fixture below starts without overlays; initial defaults are verified separately.
+	// 操作の検証は重ね合わせ図を非表示にして始める。初期表示は別に検証する。
 	for (const [field, label] of [
 		["surfaceEnabled", "地表地質図"],
 		["faultPlanes", "地下の推定面"],

@@ -1,8 +1,8 @@
-"""Geological topology is separate from the source legend.
+"""地質構造上の接続関係を、出典の凡例から分けて扱う。
 
-Ordered sedimentary packages may be omitted by erosion, but cannot invert within
-an unfaulted, normally dipping column segment. Native same-age facies are NEVER
-ordered as stratigraphic layers. Fault crossings break the ordering constraint.
+順序を持つ堆積性の地質群は侵食で欠けることがあるが、断層がなく正順に傾斜する
+鉛直区間内では逆転できない。同年代の原岩相には地層としての順序を与えない。
+断層と交差する位置で、順序の制約を切る。
 """
 import json
 import numpy as np
@@ -29,16 +29,16 @@ def topology(meta):
     return result,mapping
 
 def ordered_packages(scores,rock,vertical_barrier,surface_package):
-    """Joint DP, bottom to top. Unknown is assigned later where support is absent.
+    """下から上への同時動的計画法を使う。根拠のない範囲は後で未拘束に割り当てる。
 
-A fault can juxtapose either age order. Every interrupted vertical segment is
-therefore optimized independently. This is not restoration or slip simulation.
+断層ではどちらの年代順序も接しうるため、分断された鉛直区間を独立に最適化する。
+地質構造の復元やすべりのシミュレーションは行わない。
 """
     n= scores.shape[-1];nx,ny,nz=rock.shape
     cost=np.zeros((nx,ny,n),np.float32);back=np.zeros((nx,ny,nz,n),np.uint8)
     chosen=np.zeros(rock.shape,np.uint8)
-    # Work downwards: younger at top, older/equal below. A hard boundary label
-    # applies only at the ground surface, never to underground fault blocks.
+    # 上から下へ、若い地質群から同年代または古い地質群の順に進める。
+    # 厳密な境界ラベルは地表だけに適用し、地下の断層ブロックには適用しない。
     for z in range(nz-1,-1,-1):
         fresh=rock[:,:,z]&((~rock[:,:,z+1]) if z<nz-1 else True)
         if z<nz-1:fresh|=rock[:,:,z]&vertical_barrier[:,:,z]
@@ -46,10 +46,10 @@ therefore optimized independently. This is not restoration or slip simulation.
         arg=np.empty_like(cost,dtype=np.uint8);arg[:,:,-1]=n-1
         for g in range(n-2,-1,-1):arg[:,:,g]=np.where(cost[:,:,g]>=carry[:,:,g+1],g,arg[:,:,g+1])
         back[:,:,z]=arg;cost=np.where(fresh[...,None],0,carry)+scores[:,:,z]
-        # Top observation must select exactly its parent package.
+        # 最上部の観測は、対応する地質群を必ず選ぶ。
         top=rock[:,:,z]&((~rock[:,:,z+1]) if z<nz-1 else True)
         cost=np.where(top[...,None]&(surface_package[...,None]>=0)&(np.arange(n)!=surface_package[...,None]),-1e5,cost)
-        # Save optimized bottom state of each independent segment.
+        # 独立した各区間の、最適化済みの下端状態を保存する。
         end=rock[:,:,z]&((~rock[:,:,z-1]|vertical_barrier[:,:,z-1]) if z>0 else True)
         chosen[:,:,z]=np.where(end,np.argmax(cost,axis=-1),0)
     for z in range(nz):

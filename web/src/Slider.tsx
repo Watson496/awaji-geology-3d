@@ -4,8 +4,7 @@ import {
 	Tooltip,
 } from "@mantine/core";
 
-// Keep Mantine's hover, drag and keyboard visibility handling, but render the
-// value outside the inspector's stacking contexts and overflow boundaries.
+// 親要素の重なり順とoverflowに遮られないよう、値ラベルをポータルに描画する。
 export function Slider({ label = (value) => value, ...props }: SliderProps) {
 	return (
 		<MantineSlider

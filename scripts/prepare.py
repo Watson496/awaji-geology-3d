@@ -1,7 +1,7 @@
-"""Fetch official data, preserve originals, and prepare auditable GemPy constraints.
+"""公式データを取得し、原本を保持して、根拠を追跡できるGemPyの制約を準備する。
 
-Coordinates: UTM zone 53N (metres); arrays are [east, north], north increasing.
-No network fallbacks: an unsuccessful request stops the run.
+座標はUTM 53Nのメートル単位とし、配列は[東, 北]で北向きを正とする。
+ネットワーク要求に失敗した場合は処理を止め、代替の取得先は使わない。
 """
 from pathlib import Path
 import io
@@ -25,7 +25,7 @@ from scipy.spatial import cKDTree
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/raw'
 OUT = ROOT / 'data/prepared'
-BOX = [134.62, 34.17, 135.05, 34.64]  # west,south,east,north
+BOX = [134.62, 34.17, 135.05, 34.64]  # 西端、南端、東端、北端
 NX, NY = 200, 288
 FWD = Transformer.from_crs(4326, 32653, always_xy=True)
 INV = Transformer.from_crs(32653, 4326, always_xy=True)
@@ -40,7 +40,7 @@ def fetch(url, path, allow_missing=False):
                                '--write-out', '\n%{http_code}', url], capture_output=True, check=True)
     data, status = response.stdout.rsplit(b'\n', 1)
     if status == b'404' and allow_missing:
-        return None  # no DEM tile, e.g. ocean; never substitute invented elevation
+        return None  # 海域など標高タイルがない場所には、仮の標高を与えない
     if status != b'200':
         raise RuntimeError(f'HTTP {status.decode()} from {url}')
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -94,13 +94,13 @@ def read_layer(sheet, layer):
 
 
 def normal_from_strike(strike, dip):
-    """GSJ right hand rule: dip azimuth=strike+90, upward stratigraphic pole."""
+    """GSJの右手系に従い、傾斜方位を走向+90度、地層の法線を上向きとする。"""
     az, di = np.radians([strike + 90, dip])
     return np.array([np.sin(di) * np.sin(az), np.sin(di) * np.cos(az), np.cos(di)])
 
 
 def spaced_indices(xy, spacing, limit):
-    """Deterministic spatial thinning, never use global random state."""
+    """空間的な間引きを決定的に行い、大域の乱数状態は使わない。"""
     selected = []
     for i, point in enumerate(xy):
         if not selected or np.min(np.linalg.norm(xy[selected] - point, axis=1)) >= spacing:

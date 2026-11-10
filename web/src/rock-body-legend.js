@@ -1,4 +1,4 @@
-// Display order, not stratigraphic superposition: these source age ranges overlap.
+// 出典の年代範囲が重なるため、表示順を地層の上下関係として使わない。
 const ageOrder = [
 	"H2_or",
 	"H_sad",

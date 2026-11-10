@@ -1,4 +1,4 @@
-"""Identity attribution must not silently become a new lithology estimate."""
+"""岩体の帰属処理が岩相の再推定に変わらないことを検査する。"""
 import sys
 import json
 import hashlib
@@ -39,8 +39,8 @@ class RockBodyTests(unittest.TestCase):
         v,b,s,c=self.fixture();result=attribute(v,b,s,c,[100,100,50],1000,1)
         self.assertEqual(result[0,0,0],2)
         self.assertEqual(result[-1,0,0],3)
-        self.assertEqual(result[3,0,0],1)  # equal-distance identity stays unresolved
-        self.assertTrue(np.all(v==1))  # inference input unchanged
+        self.assertEqual(result[3,0,0],1)  # 等距離の岩体は未拘束のまま残す
+        self.assertTrue(np.all(v==1))  # 推定の入力を変更しない
 
     def test_fault_blocks_identity_even_if_nearby(self):
         v,b,s,c=self.fixture();c[0][2]=True
@@ -58,7 +58,7 @@ class RockBodyTests(unittest.TestCase):
         v,b,s,c=self.fixture()
         result=attribute(v,b[:1],s,c,[100,100,50],120,1)
         self.assertEqual(result[0,0,0],2)
-        self.assertEqual(result[1,0,0],1)  # path 100 horizontal + 50 vertical
+        self.assertEqual(result[1,0,0],1)  # 経路長は水平100mと鉛直50mの和
         self.assertEqual(result[1,0,1],2)
 
 

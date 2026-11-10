@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { clipGeometry } from "./clip-geometry.js";
 
-// Categorical trilinear sampling: interpolate indicator weights, never unit IDs.
+// 地質単元IDは補間せず、各単元の指示関数の重みを三線形補間する。
 export function sampleUnit(volume, meta, east, north, elevation) {
 	const [nx, ny] = meta.shape,
 		nz = meta.nz,
@@ -231,8 +231,7 @@ export function faultSectionSegments(triangles, route, zmin, zmax) {
 	return segments;
 }
 
-// Slice the actual smooth body meshes, so arbitrary sections use precisely the
-// same boundaries as the 3D bodies rather than displaying a new raster model.
+// 任意断面と3D岩体の境界を一致させるため、表示中の滑らかなメッシュを切断する。
 export function smoothSectionMeshes(
 	entries,
 	route,
@@ -406,7 +405,7 @@ export function smoothSectionMeshes(
 	return meshes;
 }
 
-// Unfold each leg into the same distance/elevation coordinates as the source figure.
+// 原図と比較できるよう、各区間を同じ距離・標高座標に展開する。
 export function flattenSectionMeshes(meshes, route, xyz) {
 	const lengths = route
 		.slice(1)

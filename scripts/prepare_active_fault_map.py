@@ -1,4 +1,4 @@
-"""Georeferenced GSI urban active-fault map for comparison (not RGB-to-fault inference)."""
+"""比較用の国土地理院都市圏活断層図に位置を付与する。RGBから断層を推定しない。"""
 import io,json,hashlib
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np
