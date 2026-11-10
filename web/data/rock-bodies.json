@@ -1,0 +1,1778 @@
+{
+  "schema_version": 1,
+  "body_volume_dtype": "<u2",
+  "bodies": [
+    {
+      "id": 1,
+      "key": "H2_or",
+      "source_symbol": "H2_or",
+      "name": "新生代 第四紀 後期完新世,盛り土・埋立地・干拓地",
+      "short_name": "盛り土・埋立地・干拓地",
+      "color": "#f4dfca",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 後期完新世,盛り土・埋立地・干拓地",
+        "symbol": "H2_or",
+        "value": "f4dfca",
+        "r": 244,
+        "g": 223,
+        "b": 202,
+        "formationAge_ja": "新生代 第四紀 後期完新世",
+        "formationAge_en": "Cenozoic Quaternary late Holocene",
+        "group_ja": "その他",
+        "group_en": "Other",
+        "lithology_ja": "盛り土・埋立地・干拓地",
+        "lithology_en": "Reclaimed land"
+      },
+      "source_unit": 1,
+      "identity": "unassigned:H2_or",
+      "group": "沖積層・人工地盤",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 86,
+        "shallow": 86,
+        "deep": 86
+      }
+    },
+    {
+      "id": 2,
+      "key": "H_sad",
+      "source_symbol": "H_sad",
+      "name": "新生代 第四紀 完新世,谷底平野・山間盆地・河川・海岸平野堆積物",
+      "short_name": "谷底平野・山間盆地・河川・海岸平野堆積物",
+      "color": "#e6ffff",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 完新世,谷底平野・山間盆地・河川・海岸平野堆積物",
+        "symbol": "H_sad",
+        "value": "e6ffff",
+        "r": 230,
+        "g": 255,
+        "b": 255,
+        "formationAge_ja": "新生代 第四紀 完新世",
+        "formationAge_en": "Cenozoic Quaternary Holocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "谷底平野・山間盆地・河川・海岸平野堆積物",
+        "lithology_en": "valley floor, intermountain basin, river &  coastal plain deposits"
+      },
+      "source_unit": 2,
+      "identity": "unassigned:H_sad",
+      "group": "沖積層・人工地盤",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 2001,
+        "shallow": 1531,
+        "deep": 2995
+      }
+    },
+    {
+      "id": 3,
+      "key": "K12_pbd_a",
+      "source_symbol": "K12_pbd_a",
+      "name": "中生代 前期白亜紀 アプチアン期〜アルビアン期,閃緑岩・石英閃緑岩 島弧・大陸",
+      "short_name": "閃緑岩・石英閃緑岩 島弧・大陸",
+      "color": "#9a1797",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 前期白亜紀 アプチアン期〜アルビアン期,閃緑岩・石英閃緑岩 島弧・大陸",
+        "symbol": "K12_pbd_a",
+        "value": "9a1797",
+        "r": 154,
+        "g": 23,
+        "b": 151,
+        "formationAge_ja": "中生代 前期白亜紀 アプチアン期〜アルビアン期",
+        "formationAge_en": "Mesozoic Early Cretaceous Aptian - Albian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "閃緑岩・石英閃緑岩 島弧・大陸",
+        "lithology_en": "diorite & quartz diorite island arc & continental"
+      },
+      "source_unit": 3,
+      "identity": "unassigned:K12_pbd_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 312,
+        "shallow": 287,
+        "deep": 342
+      }
+    },
+    {
+      "id": 4,
+      "key": "K2-Pg12_mgmpe_lks",
+      "source_symbol": "K2-Pg12_mgmpe_lks",
+      "name": "中生代 後期白亜紀〜新生代 古第三紀 暁新世 セランディアン期,泥質片麻岩・泥質ミグマタイト 低P/T型広域変成岩　珪線石カリ長石帯",
+      "short_name": "泥質片麻岩・泥質ミグマタイト 低P/T型広域変成岩　珪線石カリ長石帯",
+      "color": "#d56103",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀〜新生代 古第三紀 暁新世 セランディアン期,泥質片麻岩・泥質ミグマタイト 低P/T型広域変成岩　珪線石カリ長石帯",
+        "symbol": "K2-Pg12_mgmpe_lks",
+        "value": "d56103",
+        "r": 213,
+        "g": 97,
+        "b": 3,
+        "formationAge_ja": "中生代 後期白亜紀〜新生代 古第三紀 暁新世 セランディアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous - Cenozoic Paleogene Paleocene Selandian",
+        "group_ja": "変成岩",
+        "group_en": "Metamorphic rocks",
+        "lithology_ja": "泥質片麻岩・泥質ミグマタイト 低P/T型広域変成岩　珪線石カリ長石帯",
+        "lithology_en": "pelitic gneiss & migmatite sillmanite-Kfeldspar zone of low P/T regional metamorphic rocks"
+      },
+      "source_unit": 4,
+      "identity": "unassigned:K2-Pg12_mgmpe_lks",
+      "group": "変成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 17,
+        "shallow": 17,
+        "deep": 17
+      }
+    },
+    {
+      "id": 5,
+      "key": "K21_pam_a",
+      "source_symbol": "K21_pam_a",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 塊状 島弧・大陸",
+      "short_name": "花崗岩 塊状 島弧・大陸",
+      "color": "#db8ba8",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 塊状 島弧・大陸",
+        "symbol": "K21_pam_a",
+        "value": "db8ba8",
+        "r": 219,
+        "g": 139,
+        "b": 168,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 塊状 島弧・大陸",
+        "lithology_en": "massive granite island arc & continental"
+      },
+      "source_unit": 5,
+      "identity": "unassigned:K21_pam_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 0,
+        "shallow": 15,
+        "deep": 0
+      }
+    },
+    {
+      "id": 6,
+      "key": "K21_pan_a",
+      "source_symbol": "K21_pan_a",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 片麻状 島弧・大陸",
+      "short_name": "花崗岩 片麻状 島弧・大陸",
+      "color": "#db8bbc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 片麻状 島弧・大陸",
+        "symbol": "K21_pan_a",
+        "value": "db8bbc",
+        "r": 219,
+        "g": 139,
+        "b": 188,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granite island arc & continental"
+      },
+      "source_unit": 6,
+      "identity": "unassigned:K21_pan_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 138,
+        "shallow": 139,
+        "deep": 139
+      }
+    },
+    {
+      "id": 7,
+      "key": "K21_pbg_a",
+      "source_symbol": "K21_pbg_a",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,斑れい岩 島弧・大陸",
+      "short_name": "斑れい岩 島弧・大陸",
+      "color": "#a61370",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,斑れい岩 島弧・大陸",
+        "symbol": "K21_pbg_a",
+        "value": "a61370",
+        "r": 166,
+        "g": 19,
+        "b": 112,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "斑れい岩 島弧・大陸",
+        "lithology_en": "gabbro island arc & continental"
+      },
+      "source_unit": 7,
+      "identity": "unassigned:K21_pbg_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 84,
+        "shallow": 71,
+        "deep": 83
+      }
+    },
+    {
+      "id": 8,
+      "key": "K21_pim_a",
+      "source_symbol": "K21_pim_a",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+      "short_name": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+      "color": "#f2406a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "symbol": "K21_pim_a",
+        "value": "f2406a",
+        "r": 242,
+        "g": 64,
+        "b": 106,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "lithology_en": "mssive granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 8,
+      "identity": "unassigned:K21_pim_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 647,
+        "shallow": 601,
+        "deep": 653
+      }
+    },
+    {
+      "id": 9,
+      "key": "K21_pin_a",
+      "source_symbol": "K21_pin_a",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+      "short_name": "花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+      "color": "#f11d4d",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "symbol": "K21_pin_a",
+        "value": "f11d4d",
+        "r": 241,
+        "g": 29,
+        "b": 77,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 9,
+      "identity": "unassigned:K21_pin_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 5,
+        "shallow": 7,
+        "deep": 5
+      }
+    },
+    {
+      "id": 10,
+      "key": "K21_vas_ap",
+      "source_symbol": "K21_vas_ap",
+      "name": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,デイサイト・流紋岩 大規模火砕流",
+      "short_name": "デイサイト・流紋岩 大規模火砕流",
+      "color": "#ffd3fa",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,デイサイト・流紋岩 大規模火砕流",
+        "symbol": "K21_vas_ap",
+        "value": "ffd3fa",
+        "r": 255,
+        "g": 211,
+        "b": 250,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "デイサイト・流紋岩 大規模火砕流",
+        "lithology_en": "dacite & rhyolite pyroclastic rocks"
+      },
+      "source_unit": 10,
+      "identity": "unassigned:K21_vas_ap",
+      "group": "火山岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 361,
+        "shallow": 345,
+        "deep": 376
+      }
+    },
+    {
+      "id": 11,
+      "key": "K22_pam_a",
+      "source_symbol": "K22_pam_a",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗岩 塊状 島弧・大陸",
+      "short_name": "花崗岩 塊状 島弧・大陸",
+      "color": "#dd9bad",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗岩 塊状 島弧・大陸",
+        "symbol": "K22_pam_a",
+        "value": "dd9bad",
+        "r": 221,
+        "g": 155,
+        "b": 173,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 塊状 島弧・大陸",
+        "lithology_en": "massive granite island arc & continental"
+      },
+      "source_unit": 11,
+      "identity": "unassigned:K22_pam_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 296,
+        "shallow": 310,
+        "deep": 278
+      }
+    },
+    {
+      "id": 12,
+      "key": "K22_pim_a",
+      "source_symbol": "K22_pim_a",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+      "short_name": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+      "color": "#f43f65",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "symbol": "K22_pim_a",
+        "value": "f43f65",
+        "r": 244,
+        "g": 63,
+        "b": 101,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "lithology_en": "mssive granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 12,
+      "identity": "unassigned:K22_pim_a",
+      "group": "深成岩類",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 7,
+        "shallow": 9,
+        "deep": 11
+      }
+    },
+    {
+      "id": 13,
+      "key": "K22_soc",
+      "source_symbol": "K22_soc",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 礫岩",
+      "short_name": "海成層 礫岩",
+      "color": "#db9b5a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 礫岩",
+        "symbol": "K22_soc",
+        "value": "db9b5a",
+        "r": 219,
+        "g": 155,
+        "b": 90,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 礫岩",
+        "lithology_en": "marine conglomerate"
+      },
+      "source_unit": 13,
+      "identity": "unassigned:K22_soc",
+      "group": "和泉層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 2653,
+        "shallow": 2702,
+        "deep": 2598
+      }
+    },
+    {
+      "id": 14,
+      "key": "K22_som",
+      "source_symbol": "K22_som",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 泥岩",
+      "short_name": "海成層 泥岩",
+      "color": "#8dc0e5",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 泥岩",
+        "symbol": "K22_som",
+        "value": "8dc0e5",
+        "r": 141,
+        "g": 192,
+        "b": 229,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 泥岩",
+        "lithology_en": "marine mudstone"
+      },
+      "source_unit": 14,
+      "identity": "unassigned:K22_som",
+      "group": "和泉層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 18660,
+        "shallow": 18947,
+        "deep": 17753
+      }
+    },
+    {
+      "id": 15,
+      "key": "K22_sosma",
+      "source_symbol": "K22_sosma",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 砂岩泥岩互層",
+      "short_name": "海成層 砂岩泥岩互層",
+      "color": "#b5dfad",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 砂岩泥岩互層",
+        "symbol": "K22_sosma",
+        "value": "b5dfad",
+        "r": 181,
+        "g": 223,
+        "b": 173,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 砂岩泥岩互層",
+        "lithology_en": "marine alternation of sandstone & mudstone"
+      },
+      "source_unit": 15,
+      "identity": "unassigned:K22_sosma",
+      "group": "和泉層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 1415,
+        "shallow": 1468,
+        "deep": 1372
+      }
+    },
+    {
+      "id": 16,
+      "key": "K22_soss",
+      "source_symbol": "K22_soss",
+      "name": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 砂岩",
+      "short_name": "海成層 砂岩",
+      "color": "#e9e200",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 砂岩",
+        "symbol": "K22_soss",
+        "value": "e9e200",
+        "r": 233,
+        "g": 226,
+        "b": 0,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 砂岩",
+        "lithology_en": "marine sandstone"
+      },
+      "source_unit": 16,
+      "identity": "unassigned:K22_soss",
+      "group": "和泉層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 60075,
+        "shallow": 57094,
+        "deep": 60930
+      }
+    },
+    {
+      "id": 17,
+      "key": "N3_snc",
+      "source_symbol": "N3_snc",
+      "name": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 礫岩",
+      "short_name": "非海成層 礫岩",
+      "color": "#e6e8aa",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 礫岩",
+        "symbol": "N3_snc",
+        "value": "e6e8aa",
+        "r": 230,
+        "g": 232,
+        "b": 170,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 礫岩",
+        "lithology_en": "non-marine conglomerate"
+      },
+      "source_unit": 17,
+      "identity": "unassigned:N3_snc",
+      "group": "大阪層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 1467,
+        "shallow": 1657,
+        "deep": 1368
+      }
+    },
+    {
+      "id": 18,
+      "key": "N3_sns",
+      "source_symbol": "N3_sns",
+      "name": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+      "short_name": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+      "color": "#ffe6be",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "N3_sns",
+        "value": "ffe6be",
+        "r": 255,
+        "g": 230,
+        "b": 190,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "non-marine sandstone, or alternation of sandstone & mudstone or sandstone & mudstone"
+      },
+      "source_unit": 18,
+      "identity": "unassigned:N3_sns",
+      "group": "大阪層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 4649,
+        "shallow": 3668,
+        "deep": 4211
+      }
+    },
+    {
+      "id": 19,
+      "key": "Pg2_sbs",
+      "source_symbol": "Pg2_sbs",
+      "name": "新生代 古第三紀 始新世 ルテシアン期〜プリアボニアン期,汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+      "short_name": "汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+      "color": "#f3ea26",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 古第三紀 始新世 ルテシアン期〜プリアボニアン期,汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "Pg2_sbs",
+        "value": "f3ea26",
+        "r": 243,
+        "g": 234,
+        "b": 38,
+        "formationAge_ja": "新生代 古第三紀 始新世 ルテシアン期〜プリアボニアン期",
+        "formationAge_en": "Cenozoic Paleogene Eocene Lutetian - Priabonian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "brackish, or marine & non-marine  mixture sandstone, alternation of sandstone & mudstone or sandstone & mudstone "
+      },
+      "source_unit": 19,
+      "identity": "unassigned:Pg2_sbs",
+      "group": "古第三系",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 238,
+        "shallow": 246,
+        "deep": 231
+      }
+    },
+    {
+      "id": 20,
+      "key": "Q1-21_sn",
+      "source_symbol": "Q1-21_sn",
+      "name": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+      "short_name": "非海成層",
+      "color": "#ffffdc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+        "symbol": "Q1-21_sn",
+        "value": "ffffdc",
+        "r": 255,
+        "g": 255,
+        "b": 220,
+        "formationAge_ja": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期",
+        "formationAge_en": "Cenozoic Quaternary Pleistocene Gelasian - early Middle Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層",
+        "lithology_en": "non-marine sediments"
+      },
+      "source_unit": 20,
+      "identity": "unassigned:Q1-21_sn",
+      "group": "大阪層群",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 808,
+        "shallow": 485,
+        "deep": 873
+      }
+    },
+    {
+      "id": 21,
+      "key": "Q31_std",
+      "source_symbol": "Q31_std",
+      "name": "新生代 第四紀 後期更新世前期,段丘堆積物",
+      "short_name": "段丘堆積物",
+      "color": "#c8ff7a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 後期更新世前期,段丘堆積物",
+        "symbol": "Q31_std",
+        "value": "c8ff7a",
+        "r": 200,
+        "g": 255,
+        "b": 122,
+        "formationAge_ja": "新生代 第四紀 後期更新世前期",
+        "formationAge_en": "Cenozoic Quaternary early Late Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "段丘堆積物",
+        "lithology_en": "terrace deposits"
+      },
+      "source_unit": 21,
+      "identity": "unassigned:Q31_std",
+      "group": "段丘堆積物",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 344,
+        "shallow": 272,
+        "deep": 568
+      }
+    },
+    {
+      "id": 22,
+      "key": "Q32-33_std",
+      "source_symbol": "Q32-33_std",
+      "name": "新生代 第四紀 後期更新世中期〜後期更新世後期,段丘堆積物",
+      "short_name": "段丘堆積物",
+      "color": "#c8ffaa",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 後期更新世中期〜後期更新世後期,段丘堆積物",
+        "symbol": "Q32-33_std",
+        "value": "c8ffaa",
+        "r": 200,
+        "g": 255,
+        "b": 170,
+        "formationAge_ja": "新生代 第四紀 後期更新世中期〜後期更新世後期",
+        "formationAge_en": "Cenozoic Quaternary middle Late Pleistocene - late Late Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "段丘堆積物",
+        "lithology_en": "terrace deposits"
+      },
+      "source_unit": 22,
+      "identity": "unassigned:Q32-33_std",
+      "group": "段丘堆積物",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 1706,
+        "shallow": 1382,
+        "deep": 2632
+      }
+    },
+    {
+      "id": 23,
+      "key": "unconstrained",
+      "source_symbol": null,
+      "name": "未拘束（地質単元ではない）",
+      "short_name": "未拘束",
+      "color": "#a9afb6",
+      "kind": "unknown",
+      "source_unit": 23,
+      "identity": "unassigned:unconstrained",
+      "group": "未拘束",
+      "attribution": "unassigned",
+      "cell_counts": {
+        "reference": 21162,
+        "shallow": 27488,
+        "deep": 19828
+      }
+    },
+    {
+      "id": 24,
+      "key": "atago:N3_snc",
+      "source_symbol": "N3_snc",
+      "name": "愛宕累層 / N3_snc",
+      "short_name": "愛宕累層",
+      "color": "#e6e8aa",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 礫岩",
+        "symbol": "N3_snc",
+        "value": "e6e8aa",
+        "r": 230,
+        "g": 232,
+        "b": 170,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 礫岩",
+        "lithology_en": "non-marine conglomerate"
+      },
+      "source_unit": 17,
+      "identity": "atago",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Aa",
+          "surface_cells": 5
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Ai",
+          "surface_cells": 57
+        }
+      ],
+      "cell_counts": {
+        "reference": 496,
+        "shallow": 487,
+        "deep": 492
+      }
+    },
+    {
+      "id": 25,
+      "key": "atago:N3_sns",
+      "source_symbol": "N3_sns",
+      "name": "愛宕累層 / N3_sns",
+      "short_name": "愛宕累層",
+      "color": "#ffe6be",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "N3_sns",
+        "value": "ffe6be",
+        "r": 255,
+        "g": 230,
+        "b": 190,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "non-marine sandstone, or alternation of sandstone & mudstone or sandstone & mudstone"
+      },
+      "source_unit": 18,
+      "identity": "atago",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "A",
+          "surface_cells": 4
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "At",
+          "surface_cells": 94
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Ag",
+          "surface_cells": 546
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "As",
+          "surface_cells": 321
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Aa",
+          "surface_cells": 508
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Ai",
+          "surface_cells": 10
+        }
+      ],
+      "cell_counts": {
+        "reference": 28612,
+        "shallow": 28180,
+        "deep": 28252
+      }
+    },
+    {
+      "id": 26,
+      "key": "atago:Q1-21_sn",
+      "source_symbol": "Q1-21_sn",
+      "name": "愛宕累層 / Q1-21_sn",
+      "short_name": "愛宕累層",
+      "color": "#ffffdc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+        "symbol": "Q1-21_sn",
+        "value": "ffffdc",
+        "r": 255,
+        "g": 255,
+        "b": 220,
+        "formationAge_ja": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期",
+        "formationAge_en": "Cenozoic Quaternary Pleistocene Gelasian - early Middle Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層",
+        "lithology_en": "non-marine sediments"
+      },
+      "source_unit": 20,
+      "identity": "atago",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "As",
+          "surface_cells": 14
+        }
+      ],
+      "cell_counts": {
+        "reference": 33,
+        "shallow": 38,
+        "deep": 30
+      }
+    },
+    {
+      "id": 27,
+      "key": "ei:K21_pan_a",
+      "source_symbol": "K21_pan_a",
+      "name": "江井花崗閃緑岩 / K21_pan_a",
+      "short_name": "江井花崗閃緑岩",
+      "color": "#db8bbc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 片麻状 島弧・大陸",
+        "symbol": "K21_pan_a",
+        "value": "db8bbc",
+        "r": 219,
+        "g": 139,
+        "b": 188,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granite island arc & continental"
+      },
+      "source_unit": 6,
+      "identity": "ei",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "EGd",
+          "surface_cells": 7
+        }
+      ],
+      "cell_counts": {
+        "reference": 9,
+        "shallow": 9,
+        "deep": 9
+      }
+    },
+    {
+      "id": 28,
+      "key": "ei:K21_pin_a",
+      "source_symbol": "K21_pin_a",
+      "name": "江井花崗閃緑岩 / K21_pin_a",
+      "short_name": "江井花崗閃緑岩",
+      "color": "#f11d4d",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "symbol": "K21_pin_a",
+        "value": "f11d4d",
+        "r": 241,
+        "g": 29,
+        "b": 77,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 9,
+      "identity": "ei",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "EGd",
+          "surface_cells": 12
+        }
+      ],
+      "cell_counts": {
+        "reference": 105,
+        "shallow": 105,
+        "deep": 105
+      }
+    },
+    {
+      "id": 29,
+      "key": "goshikihama:N3_sns",
+      "source_symbol": "N3_sns",
+      "name": "五色浜累層 / N3_sns",
+      "short_name": "五色浜累層",
+      "color": "#ffe6be",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "N3_sns",
+        "value": "ffe6be",
+        "r": 255,
+        "g": 230,
+        "b": 190,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "non-marine sandstone, or alternation of sandstone & mudstone or sandstone & mudstone"
+      },
+      "source_unit": 18,
+      "identity": "goshikihama",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Go",
+          "surface_cells": 23
+        }
+      ],
+      "cell_counts": {
+        "reference": 124,
+        "shallow": 125,
+        "deep": 129
+      }
+    },
+    {
+      "id": 30,
+      "key": "goshikihama:Q1-21_sn",
+      "source_symbol": "Q1-21_sn",
+      "name": "五色浜累層 / Q1-21_sn",
+      "short_name": "五色浜累層",
+      "color": "#ffffdc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+        "symbol": "Q1-21_sn",
+        "value": "ffffdc",
+        "r": 255,
+        "g": 255,
+        "b": 220,
+        "formationAge_ja": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期",
+        "formationAge_en": "Cenozoic Quaternary Pleistocene Gelasian - early Middle Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層",
+        "lithology_en": "non-marine sediments"
+      },
+      "source_unit": 20,
+      "identity": "goshikihama",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Go",
+          "surface_cells": 263
+        }
+      ],
+      "cell_counts": {
+        "reference": 5207,
+        "shallow": 4591,
+        "deep": 5130
+      }
+    },
+    {
+      "id": 31,
+      "key": "iwaya:Pg2_sbs",
+      "source_symbol": "Pg2_sbs",
+      "name": "岩屋累層 / Pg2_sbs",
+      "short_name": "岩屋累層",
+      "color": "#f3ea26",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 古第三紀 始新世 ルテシアン期〜プリアボニアン期,汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "Pg2_sbs",
+        "value": "f3ea26",
+        "r": 243,
+        "g": 234,
+        "b": 38,
+        "formationAge_ja": "新生代 古第三紀 始新世 ルテシアン期〜プリアボニアン期",
+        "formationAge_en": "Cenozoic Paleogene Eocene Lutetian - Priabonian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "汽水成層ないし海成・非海成混合層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "brackish, or marine & non-marine  mixture sandstone, alternation of sandstone & mudstone or sandstone & mudstone "
+      },
+      "source_unit": 19,
+      "identity": "iwaya",
+      "group": "古第三系",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "Iu",
+          "surface_cells": 43
+        },
+        {
+          "sheet": "akashi",
+          "symbol": "Im",
+          "surface_cells": 52
+        },
+        {
+          "sheet": "akashi",
+          "symbol": "Il",
+          "surface_cells": 65
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Il",
+          "surface_cells": 12
+        }
+      ],
+      "cell_counts": {
+        "reference": 2256,
+        "shallow": 2239,
+        "deep": 2349
+      }
+    },
+    {
+      "id": 32,
+      "key": "iwaya-granite:K22_pam_a",
+      "source_symbol": "K22_pam_a",
+      "name": "岩屋花崗岩 / K22_pam_a",
+      "short_name": "岩屋花崗岩",
+      "color": "#dd9bad",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗岩 塊状 島弧・大陸",
+        "symbol": "K22_pam_a",
+        "value": "dd9bad",
+        "r": 221,
+        "g": 155,
+        "b": 173,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 塊状 島弧・大陸",
+        "lithology_en": "massive granite island arc & continental"
+      },
+      "source_unit": 11,
+      "identity": "iwaya-granite",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "IG",
+          "surface_cells": 18
+        }
+      ],
+      "cell_counts": {
+        "reference": 1005,
+        "shallow": 1010,
+        "deep": 983
+      }
+    },
+    {
+      "id": 33,
+      "key": "kagaribayama:K22_pam_a",
+      "source_symbol": "K22_pam_a",
+      "name": "篝場山花崗岩 / K22_pam_a",
+      "short_name": "篝場山花崗岩",
+      "color": "#dd9bad",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗岩 塊状 島弧・大陸",
+        "symbol": "K22_pam_a",
+        "value": "dd9bad",
+        "r": 221,
+        "g": 155,
+        "b": 173,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 塊状 島弧・大陸",
+        "lithology_en": "massive granite island arc & continental"
+      },
+      "source_unit": 11,
+      "identity": "kagaribayama",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "KG",
+          "surface_cells": 6
+        }
+      ],
+      "cell_counts": {
+        "reference": 373,
+        "shallow": 419,
+        "deep": 359
+      }
+    },
+    {
+      "id": 34,
+      "key": "kariya:N3_sns",
+      "source_symbol": "N3_sns",
+      "name": "仮屋累層 / N3_sns",
+      "short_name": "仮屋累層",
+      "color": "#ffe6be",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "N3_sns",
+        "value": "ffe6be",
+        "r": 255,
+        "g": 230,
+        "b": 190,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "non-marine sandstone, or alternation of sandstone & mudstone or sandstone & mudstone"
+      },
+      "source_unit": 18,
+      "identity": "kariya",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "Kk",
+          "surface_cells": 8
+        }
+      ],
+      "cell_counts": {
+        "reference": 64,
+        "shallow": 59,
+        "deep": 62
+      }
+    },
+    {
+      "id": 35,
+      "key": "kariya:Q1-21_sn",
+      "source_symbol": "Q1-21_sn",
+      "name": "仮屋累層 / Q1-21_sn",
+      "short_name": "仮屋累層",
+      "color": "#ffffdc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+        "symbol": "Q1-21_sn",
+        "value": "ffffdc",
+        "r": 255,
+        "g": 255,
+        "b": 220,
+        "formationAge_ja": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期",
+        "formationAge_en": "Cenozoic Quaternary Pleistocene Gelasian - early Middle Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層",
+        "lithology_en": "non-marine sediments"
+      },
+      "source_unit": 20,
+      "identity": "kariya",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "Kj",
+          "surface_cells": 3
+        },
+        {
+          "sheet": "akashi",
+          "symbol": "Kk",
+          "surface_cells": 19
+        }
+      ],
+      "cell_counts": {
+        "reference": 426,
+        "shallow": 450,
+        "deep": 418
+      }
+    },
+    {
+      "id": 36,
+      "key": "kitaama:K22_som",
+      "source_symbol": "K22_som",
+      "name": "北阿万累層 / K22_som",
+      "short_name": "北阿万累層",
+      "color": "#8dc0e5",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 泥岩",
+        "symbol": "K22_som",
+        "value": "8dc0e5",
+        "r": 141,
+        "g": 192,
+        "b": 229,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 泥岩",
+        "lithology_en": "marine mudstone"
+      },
+      "source_unit": 14,
+      "identity": "kitaama",
+      "group": "和泉層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Ka",
+          "surface_cells": 4
+        }
+      ],
+      "cell_counts": {
+        "reference": 54,
+        "shallow": 57,
+        "deep": 53
+      }
+    },
+    {
+      "id": 37,
+      "key": "kitaama:K22_soss",
+      "source_symbol": "K22_soss",
+      "name": "北阿万累層 / K22_soss",
+      "short_name": "北阿万累層",
+      "color": "#e9e200",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 砂岩",
+        "symbol": "K22_soss",
+        "value": "e9e200",
+        "r": 233,
+        "g": 226,
+        "b": 0,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 砂岩",
+        "lithology_en": "marine sandstone"
+      },
+      "source_unit": 16,
+      "identity": "kitaama",
+      "group": "和泉層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Ks",
+          "surface_cells": 12
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Ka",
+          "surface_cells": 39
+        }
+      ],
+      "cell_counts": {
+        "reference": 1888,
+        "shallow": 1807,
+        "deep": 1784
+      }
+    },
+    {
+      "id": 38,
+      "key": "nojima-gd:K21_pim_a",
+      "source_symbol": "K21_pim_a",
+      "name": "野島花崗閃緑岩 / K21_pim_a",
+      "short_name": "野島花崗閃緑岩",
+      "color": "#f2406a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "symbol": "K21_pim_a",
+        "value": "f2406a",
+        "r": 242,
+        "g": 64,
+        "b": 106,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "lithology_en": "mssive granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 8,
+      "identity": "nojima-gd",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "NGd",
+          "surface_cells": 514
+        }
+      ],
+      "cell_counts": {
+        "reference": 9507,
+        "shallow": 9422,
+        "deep": 9569
+      }
+    },
+    {
+      "id": 39,
+      "key": "seidan:K22_soc",
+      "source_symbol": "K22_soc",
+      "name": "西淡累層 / K22_soc",
+      "short_name": "西淡累層",
+      "color": "#db9b5a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,海成層 礫岩",
+        "symbol": "K22_soc",
+        "value": "db9b5a",
+        "r": 219,
+        "g": 155,
+        "b": 90,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "海成層 礫岩",
+        "lithology_en": "marine conglomerate"
+      },
+      "source_unit": 13,
+      "identity": "seidan",
+      "group": "和泉層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "Sg",
+          "surface_cells": 5
+        }
+      ],
+      "cell_counts": {
+        "reference": 208,
+        "shallow": 247,
+        "deep": 198
+      }
+    },
+    {
+      "id": 40,
+      "key": "sennan:K21_vas_ap",
+      "source_symbol": "K21_vas_ap",
+      "name": "泉南流紋岩類 / K21_vas_ap",
+      "short_name": "泉南流紋岩類",
+      "color": "#ffd3fa",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,デイサイト・流紋岩 大規模火砕流",
+        "symbol": "K21_vas_ap",
+        "value": "ffd3fa",
+        "r": 255,
+        "g": 211,
+        "b": 250,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "デイサイト・流紋岩 大規模火砕流",
+        "lithology_en": "dacite & rhyolite pyroclastic rocks"
+      },
+      "source_unit": 10,
+      "identity": "sennan",
+      "group": "火山岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "W",
+          "surface_cells": 28
+        }
+      ],
+      "cell_counts": {
+        "reference": 229,
+        "shallow": 238,
+        "deep": 229
+      }
+    },
+    {
+      "id": 41,
+      "key": "senzan:K22_pim_a",
+      "source_symbol": "K22_pim_a",
+      "name": "先山花崗岩 / K22_pim_a",
+      "short_name": "先山花崗岩",
+      "color": "#f43f65",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "symbol": "K22_pim_a",
+        "value": "f43f65",
+        "r": 244,
+        "g": 63,
+        "b": 101,
+        "formationAge_ja": "中生代 後期白亜紀 カンパニアン期〜マーストリヒチアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Campanian - Maastrichtian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "lithology_en": "mssive granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 12,
+      "identity": "senzan",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "SG",
+          "surface_cells": 294
+        }
+      ],
+      "cell_counts": {
+        "reference": 4908,
+        "shallow": 4926,
+        "deep": 4863
+      }
+    },
+    {
+      "id": 42,
+      "key": "shizuki:K21_pin_a",
+      "source_symbol": "K21_pin_a",
+      "name": "志筑トーナル岩 / K21_pin_a",
+      "short_name": "志筑トーナル岩",
+      "color": "#f11d4d",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "symbol": "K21_pin_a",
+        "value": "f11d4d",
+        "r": 241,
+        "g": 29,
+        "b": 77,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 9,
+      "identity": "shizuki",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "ST",
+          "surface_cells": 291
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "ST",
+          "surface_cells": 506
+        }
+      ],
+      "cell_counts": {
+        "reference": 15654,
+        "shallow": 15517,
+        "deep": 15653
+      }
+    },
+    {
+      "id": 43,
+      "key": "sumoto-gd:K21_pim_a",
+      "source_symbol": "K21_pim_a",
+      "name": "洲本花崗閃緑岩 / K21_pim_a",
+      "short_name": "洲本花崗閃緑岩",
+      "color": "#f2406a",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "symbol": "K21_pim_a",
+        "value": "f2406a",
+        "r": 242,
+        "g": 64,
+        "b": 106,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗閃緑岩・トーナル岩 塊状 島弧・大陸",
+        "lithology_en": "mssive granodiolite & tonalite island arc & continental"
+      },
+      "source_unit": 8,
+      "identity": "sumoto-gd",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "sumoto",
+          "symbol": "SGd",
+          "surface_cells": 445
+        }
+      ],
+      "cell_counts": {
+        "reference": 6842,
+        "shallow": 6682,
+        "deep": 7034
+      }
+    },
+    {
+      "id": 44,
+      "key": "tosanji:K21_pam_a",
+      "source_symbol": "K21_pam_a",
+      "name": "東山寺花崗岩 / K21_pam_a",
+      "short_name": "東山寺花崗岩",
+      "color": "#db8ba8",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 塊状 島弧・大陸",
+        "symbol": "K21_pam_a",
+        "value": "db8ba8",
+        "r": 219,
+        "g": 139,
+        "b": 168,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 塊状 島弧・大陸",
+        "lithology_en": "massive granite island arc & continental"
+      },
+      "source_unit": 5,
+      "identity": "tosanji",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "TG",
+          "surface_cells": 58
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "TG",
+          "surface_cells": 186
+        }
+      ],
+      "cell_counts": {
+        "reference": 4012,
+        "shallow": 3891,
+        "deep": 4089
+      }
+    },
+    {
+      "id": 45,
+      "key": "toshima:N3_sns",
+      "source_symbol": "N3_sns",
+      "name": "富島累層 / N3_sns",
+      "short_name": "富島累層",
+      "color": "#ffe6be",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世,非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "symbol": "N3_sns",
+        "value": "ffe6be",
+        "r": 255,
+        "g": 230,
+        "b": 190,
+        "formationAge_ja": "新生代 新第三紀 中新世 メッシニアン期〜鮮新世",
+        "formationAge_en": "Cenozoic Neogene Miocene Messinian - Pliocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層 砂岩，砂岩泥岩互層ないし砂岩・泥岩",
+        "lithology_en": "non-marine sandstone, or alternation of sandstone & mudstone or sandstone & mudstone"
+      },
+      "source_unit": 18,
+      "identity": "toshima",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "To",
+          "surface_cells": 106
+        },
+        {
+          "sheet": "akashi",
+          "symbol": "Tf",
+          "surface_cells": 29
+        },
+        {
+          "sheet": "akashi",
+          "symbol": "Ta",
+          "surface_cells": 49
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "Ta",
+          "surface_cells": 41
+        }
+      ],
+      "cell_counts": {
+        "reference": 4801,
+        "shallow": 4701,
+        "deep": 4715
+      }
+    },
+    {
+      "id": 46,
+      "key": "toshima:Q1-21_sn",
+      "source_symbol": "Q1-21_sn",
+      "name": "富島累層 / Q1-21_sn",
+      "short_name": "富島累層",
+      "color": "#ffffdc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期,非海成層",
+        "symbol": "Q1-21_sn",
+        "value": "ffffdc",
+        "r": 255,
+        "g": 255,
+        "b": 220,
+        "formationAge_ja": "新生代 第四紀 更新世 ジェラシアン期〜前期チバニアン期",
+        "formationAge_en": "Cenozoic Quaternary Pleistocene Gelasian - early Middle Pleistocene",
+        "group_ja": "堆積岩",
+        "group_en": "Sedimentary rocks",
+        "lithology_ja": "非海成層",
+        "lithology_en": "non-marine sediments"
+      },
+      "source_unit": 20,
+      "identity": "toshima",
+      "group": "大阪層群",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "To",
+          "surface_cells": 6
+        }
+      ],
+      "cell_counts": {
+        "reference": 21,
+        "shallow": 21,
+        "deep": 21
+      }
+    },
+    {
+      "id": 47,
+      "key": "tsushigawa:K21_pan_a",
+      "source_symbol": "K21_pan_a",
+      "name": "都志川花崗岩 / K21_pan_a",
+      "short_name": "都志川花崗岩",
+      "color": "#db8bbc",
+      "kind": "geological",
+      "source_legend": {
+        "title": "中生代 後期白亜紀 セノマニアン期〜サントニアン期,花崗岩 片麻状 島弧・大陸",
+        "symbol": "K21_pan_a",
+        "value": "db8bbc",
+        "r": 219,
+        "g": 139,
+        "b": 188,
+        "formationAge_ja": "中生代 後期白亜紀 セノマニアン期〜サントニアン期",
+        "formationAge_en": "Mesozoic Late Cretaceous Cenomanian - Santonian",
+        "group_ja": "火成岩",
+        "group_en": "Igneous rocks",
+        "lithology_ja": "花崗岩 片麻状 島弧・大陸",
+        "lithology_en": "gneissose granite island arc & continental"
+      },
+      "source_unit": 6,
+      "identity": "tsushigawa",
+      "group": "深成岩類",
+      "attribution": "interpreted",
+      "sources": [
+        {
+          "sheet": "akashi",
+          "symbol": "TS",
+          "surface_cells": 31
+        },
+        {
+          "sheet": "sumoto",
+          "symbol": "TS",
+          "surface_cells": 430
+        }
+      ],
+      "cell_counts": {
+        "reference": 6364,
+        "shallow": 6281,
+        "deep": 6454
+      }
+    }
+  ],
+  "method": "Same-native-class, finite-fault-blocked shortest paths from concordant 50k / seamless outcrops",
+  "maximum_transfer_m": 2000.0,
+  "minimum_winner_margin_m": 200.0,
+  "implementation_sha256": "4a0c1d9f11837d6b288b5c6e5ccb3b69068761710b917e0bdc54c1a58fb31dea",
+  "native_volume_sha256": {
+    "reference": "1e2d27dbe260892327489a8e36dca8a2a3e47727e8d0aa546b238bf79af23b36",
+    "shallow": "d71fd3ffa1a39b806f38f53b203cc06723564af3c486834883db2b5a4fe1b1cc",
+    "deep": "829da89079523562548bdf82d612057e5106215bd2e4ab19a442a11d56b50e7a"
+  },
+  "limitations": [
+    "Body attribution is an interpretation of the existing volume, not an independently fitted 3D contact.",
+    "No vertical polygon extrusion. No splitting by disconnected pixels alone.",
+    "Unassigned means geological identity is unresolved; it does not mean unknown native lithology.",
+    "1990/1992 Iwaya map symbols identify the area only; obsolete Miocene age / Kobe assignment is not adopted."
+  ],
+  "sources": [
+    {
+      "sheet": "akashi",
+      "crs": "EPSG:4612",
+      "url": "https://www.gsj.jp/data/50KGM/VCT/GSJ_MAP_G050_12083_1990_V01.zip",
+      "sha256": "cfb35e286e5560832e99501c3966c5633e617a3085eeb0db854335244d508fbc"
+    },
+    {
+      "sheet": "sumoto",
+      "crs": "EPSG:4612",
+      "url": "https://www.gsj.jp/data/50KGM/VCT/GSJ_MAP_G050_13011_1992_V01.zip",
+      "sha256": "4b192325b42a804c4a7c2a814bee77d938c364944d77d1aaf85e34af450e2fd6"
+    }
+  ]
+}

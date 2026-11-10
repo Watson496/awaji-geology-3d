@@ -1,0 +1,57 @@
+{
+  "rokko": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_09_rokko_awajishima.pdf",
+    "page": 7,
+    "sha256": "d7c4be7a915c529c198e75a657322eade4950ce88d66d4a12740464f136bbe44",
+    "file": "data/raw/rokko-2026.pdf"
+  },
+  "shizuki": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_10_shizuki.pdf",
+    "page": 1,
+    "sha256": "897558b6429a43623d4a7553744af24213c6486dfdac5e77604fedf3c79f6d3c",
+    "file": "data/raw/shizuki-2026.pdf"
+  },
+  "senzan": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_11_senzan-aiga.pdf",
+    "page": 4,
+    "sha256": "be6a1c3029e05e5c9c9088a19a8f892393032acbd8cc44ecd075a39f9e447029",
+    "file": "data/raw/senzan-2026.pdf"
+  },
+  "hansanji": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_12_hansanji.pdf",
+    "page": 1,
+    "sha256": "731da5a32c5940e4fc318b5b26de345fa41ff9d82b5d852858e5929a7529fb8d",
+    "file": "data/raw/hansanji-2026.pdf"
+  },
+  "yura": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_13_yura.pdf",
+    "page": 1,
+    "sha256": "a9f750deac14c926bd15460222b8d30334b3deb10bd0b44bd383b4b60029f8e9",
+    "file": "data/raw/yura-2026.pdf"
+  },
+  "tsunaoki": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_14_tsunaoki.pdf",
+    "page": 1,
+    "sha256": "1117bcc8b8f9aebe851cee25c35e0cb09cadd62e97940e8bdf8188e51ec775e5",
+    "file": "data/raw/tsunaoki-2026.pdf"
+  },
+  "osakawan": {
+    "url": "https://www.jishin.go.jp/main/chousa/26aug_chi_kinki/kinki_15_osakawan.pdf",
+    "page": 4,
+    "sha256": "5b84d5d8bb71630e2bbba952dcac57e8dd232e6e2e6f1bf38c88303939930f8d",
+    "file": "data/raw/osakawan-2026.pdf"
+  },
+  "mtl": {
+    "url": "https://www.jishin.go.jp/main/chousa/17dec_chi_shikoku/shikoku_01_mtl.pdf",
+    "page": 13,
+    "sha256": "e48fc8fdc0ef7b02c4f89bdb75a36bc150d31c7658a7520883e4c17c81c75dfa",
+    "file": "data/raw/mtl-2017.pdf"
+  },
+  "gsi-afm2014": {
+    "url": "https://www.gsi.go.jp/common/000096723.pdf",
+    "file": "data/raw/gsi-afm-guidebook-2014.pdf",
+    "sha256": "a7c218fd35699482803ba9180a30b4f25661184175448b6d94f429a3f3496d53",
+    "title": "岡田・熊原（2014）都市圏活断層図 洲本・由良・鳴門海峡 解説書",
+    "usage": "reference for mapped fault distribution and fault types; not a measured underground surface or numerical dip constraint"
+  }
+}

@@ -1,0 +1,497 @@
+[
+  {
+    "section_id": "akashi-ab",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [
+      {
+        "id": "akashi-ab-iwaya-base-1",
+        "distance_to_matching_model_interface_m": 205.75670874368208,
+        "reading_sigma_m": 100,
+        "tolerance_m": 250,
+        "within_tolerance": true
+      },
+      {
+        "id": "akashi-ab-iwaya-base-2",
+        "distance_to_matching_model_interface_m": 219.5470297325521,
+        "reading_sigma_m": 100,
+        "tolerance_m": 250,
+        "within_tolerance": true
+      },
+      {
+        "id": "akashi-ab-iwaya-base-3",
+        "distance_to_matching_model_interface_m": 85.3277092050627,
+        "reading_sigma_m": 100,
+        "tolerance_m": 250,
+        "within_tolerance": true
+      }
+    ],
+    "fault_intersections": [
+      {
+        "fault_name": "野島断層",
+        "pixel": [
+          2423,
+          3610
+        ],
+        "horizontal_distance_to_fault_surface_m": 38.541886428921245,
+        "map_registration_offset_m": -39.150533051428994,
+        "registered_curve_distance_m": 0.17263904156041487,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 40.8946618993319,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 71.40584973669536,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "野島断層",
+        "pixel": [
+          2430,
+          3630
+        ],
+        "horizontal_distance_to_fault_surface_m": 38.454082770295024,
+        "map_registration_offset_m": -39.150533051428994,
+        "registered_curve_distance_m": 0.26118400317389295,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 40.8946618993319,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 71.40584973669536,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "中持断層",
+        "pixel": [
+          2715,
+          3590
+        ],
+        "horizontal_distance_to_fault_surface_m": 5.858219586869474,
+        "map_registration_offset_m": -5.80467508777879,
+        "registered_curve_distance_m": 0.03125360198415351,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 12.705121171925857,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.50791646052879,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "中持断層",
+        "pixel": [
+          2720,
+          3610
+        ],
+        "horizontal_distance_to_fault_surface_m": 5.840079737884435,
+        "map_registration_offset_m": -5.80467508777879,
+        "registered_curve_distance_m": 0.05063040044351396,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 12.705121171925857,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.50791646052879,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "楠本断層",
+        "pixel": [
+          2988,
+          3600
+        ],
+        "horizontal_distance_to_fault_surface_m": 144.7628605998173,
+        "map_registration_offset_m": 144.76544826980893,
+        "registered_curve_distance_m": 0.8076835535377049,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 146.99963543385533,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.70304188988266,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "楠本断層",
+        "pixel": [
+          2980,
+          3630
+        ],
+        "horizontal_distance_to_fault_surface_m": 144.5135423952667,
+        "map_registration_offset_m": 144.76544826980893,
+        "registered_curve_distance_m": 1.6760069320533344,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 146.99963543385533,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.70304188988266,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      }
+    ]
+  },
+  {
+    "section_id": "akashi-cde",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [],
+    "fault_intersections": [
+      {
+        "fault_name": "浅野断層",
+        "pixel": [
+          3733,
+          3570
+        ],
+        "horizontal_distance_to_fault_surface_m": 63.72575295953478,
+        "map_registration_offset_m": -63.67648568241036,
+        "registered_curve_distance_m": 0.0017215678470095597,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 63.73217267361707,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.212804499699,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "浅野断層",
+        "pixel": [
+          3740,
+          3590
+        ],
+        "horizontal_distance_to_fault_surface_m": 63.76816821665975,
+        "map_registration_offset_m": -63.67648568241036,
+        "registered_curve_distance_m": 0.04410419994105942,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 63.73217267361707,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.212804499699,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "浅野断層",
+        "pixel": [
+          3750,
+          3635
+        ],
+        "horizontal_distance_to_fault_surface_m": 63.9326548910719,
+        "map_registration_offset_m": -63.67648568241036,
+        "registered_curve_distance_m": 0.20339936754183233,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 63.73217267361707,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 76.212804499699,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          4048,
+          3550
+        ],
+        "horizontal_distance_to_fault_surface_m": 485.2886974682452,
+        "map_registration_offset_m": 26.358148396309694,
+        "registered_curve_distance_m": null,
+        "model_domain_status": "above associated current DEM trace",
+        "map_registration_distance_m": 26.419122711342084,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.30253089541742,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          4065,
+          3590
+        ],
+        "horizontal_distance_to_fault_surface_m": 28.262237687100072,
+        "map_registration_offset_m": 26.358148396309694,
+        "registered_curve_distance_m": 1.8442371856082047,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 26.419122711342084,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.30253089541742,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          4088,
+          3626
+        ],
+        "horizontal_distance_to_fault_surface_m": 40.79209032119874,
+        "map_registration_offset_m": 26.358148396309694,
+        "registered_curve_distance_m": 14.387007652136676,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 26.419122711342084,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.30253089541742,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      }
+    ]
+  },
+  {
+    "section_id": "akashi-fg",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [],
+    "fault_intersections": [
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          2800,
+          3919
+        ],
+        "horizontal_distance_to_fault_surface_m": 7.292967374674422,
+        "map_registration_offset_m": 7.308139529106075,
+        "registered_curve_distance_m": 0.17655391123495665,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 11.46747991343819,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 80.11278125034275,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          2792,
+          3960
+        ],
+        "horizontal_distance_to_fault_surface_m": 6.411604648880713,
+        "map_registration_offset_m": 7.308139529106075,
+        "registered_curve_distance_m": 1.143189124524591,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 11.46747991343819,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 80.11278125034275,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "久野々断層",
+        "pixel": [
+          2783,
+          3998
+        ],
+        "horizontal_distance_to_fault_surface_m": 4.991605631957566,
+        "map_registration_offset_m": 7.308139529106075,
+        "registered_curve_distance_m": 2.6229758254029347,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 11.46747991343819,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 80.11278125034275,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      }
+    ]
+  },
+  {
+    "section_id": "sumoto-ab",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [],
+    "fault_intersections": []
+  },
+  {
+    "section_id": "sumoto-cde",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [],
+    "fault_intersections": [
+      {
+        "fault_name": "安乎断層",
+        "pixel": [
+          3644,
+          3938
+        ],
+        "horizontal_distance_to_fault_surface_m": null,
+        "map_registration_offset_m": -190.13616490090828,
+        "registered_curve_distance_m": null,
+        "model_domain_status": "above associated current DEM trace",
+        "map_registration_distance_m": 190.63526596465107,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.53892143845572,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "安乎断層",
+        "pixel": [
+          3624,
+          3990
+        ],
+        "horizontal_distance_to_fault_surface_m": 189.33811451962026,
+        "map_registration_offset_m": -190.13616490090828,
+        "registered_curve_distance_m": 0.7847683246704524,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 190.63526596465107,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.53892143845572,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "安乎断層",
+        "pixel": [
+          3605,
+          4036
+        ],
+        "horizontal_distance_to_fault_surface_m": null,
+        "map_registration_offset_m": -190.13616490090828,
+        "registered_curve_distance_m": null,
+        "model_domain_status": "below computational cap",
+        "map_registration_distance_m": 190.63526596465107,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.53892143845572,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "厚浜断層",
+        "pixel": [
+          4273,
+          3946
+        ],
+        "horizontal_distance_to_fault_surface_m": 302.34165430077445,
+        "map_registration_offset_m": 218.58862839195206,
+        "registered_curve_distance_m": 0.8928950163051602,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 302.51724455539204,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 74.97703435534365,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "厚浜断層",
+        "pixel": [
+          4255,
+          4000
+        ],
+        "horizontal_distance_to_fault_surface_m": 271.9213766898934,
+        "map_registration_offset_m": 218.58862839195206,
+        "registered_curve_distance_m": 7.710072390448702,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 302.51724455539204,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 74.97703435534365,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "厚浜断層",
+        "pixel": [
+          4243,
+          4037
+        ],
+        "horizontal_distance_to_fault_surface_m": null,
+        "map_registration_offset_m": 218.58862839195206,
+        "registered_curve_distance_m": null,
+        "model_domain_status": "below computational cap",
+        "map_registration_distance_m": 302.51724455539204,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 74.97703435534365,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      }
+    ]
+  },
+  {
+    "section_id": "sumoto-fgh",
+    "usage": "constraint reproduction, not independent validation",
+    "boundary_fit": [],
+    "fault_intersections": [
+      {
+        "fault_name": "鮎原南断層",
+        "pixel": [
+          4280,
+          3560
+        ],
+        "horizontal_distance_to_fault_surface_m": 278.1031061431059,
+        "map_registration_offset_m": -278.24682309864596,
+        "registered_curve_distance_m": 0.004841391646518345,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 278.24700614350024,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.3138691781736,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "鮎原南断層",
+        "pixel": [
+          4260,
+          3610
+        ],
+        "horizontal_distance_to_fault_surface_m": 277.92495910259237,
+        "map_registration_offset_m": -278.24682309864596,
+        "registered_curve_distance_m": 0.20308280883044405,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 278.24700614350024,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.3138691781736,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "鮎原南断層",
+        "pixel": [
+          4247,
+          3645
+        ],
+        "horizontal_distance_to_fault_surface_m": 277.79321331456066,
+        "map_registration_offset_m": -278.24682309864596,
+        "registered_curve_distance_m": 0.3353788998278797,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 278.24700614350024,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 68.3138691781736,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "奥畑断層",
+        "pixel": [
+          4598,
+          3538
+        ],
+        "horizontal_distance_to_fault_surface_m": 538.3531702930579,
+        "map_registration_offset_m": -327.3993317763193,
+        "registered_curve_distance_m": null,
+        "model_domain_status": "above associated current DEM trace",
+        "map_registration_distance_m": 327.6269703972328,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.67471000933875,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "奥畑断層",
+        "pixel": [
+          4578,
+          3590
+        ],
+        "horizontal_distance_to_fault_surface_m": 326.40721638196055,
+        "map_registration_offset_m": -327.3993317763193,
+        "registered_curve_distance_m": 0.7903700273676175,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 327.6269703972328,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.67471000933875,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      },
+      {
+        "fault_name": "奥畑断層",
+        "pixel": [
+          4559,
+          3646
+        ],
+        "horizontal_distance_to_fault_surface_m": 327.35060148989214,
+        "map_registration_offset_m": -327.3993317763193,
+        "registered_curve_distance_m": 0.12514552144481658,
+        "model_domain_status": "in_domain",
+        "map_registration_distance_m": 327.6269703972328,
+        "reading_sigma_m": 150,
+        "source_dip_deg": 72.67471000933875,
+        "usage": "source curve reproduction after registered trace offset, not independent accuracy",
+        "used_for_dip_fit": true
+      }
+    ]
+  }
+]

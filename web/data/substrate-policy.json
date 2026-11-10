@@ -1,0 +1,20 @@
+{
+  "status": "Substrate inference assumptions; not measured correlation ranges or calibrated probabilities",
+  "screening_weight": 0.02,
+  "maximum_transfer_distance_m": {
+    "shallow": 1000,
+    "reference": 2000,
+    "deep": 3000
+  },
+  "minimum_package_share": 0.5,
+  "minimum_native_share": 0.5,
+  "minimum_native_margin": 0.15,
+  "constraints": [
+    "Only exposed older units provide surface Dirichlet labels.",
+    "Surficial-cover observations are not negative labels for all older units.",
+    "Registered interpreted section picks are soft fitting constraints, not independent validation.",
+    "Finite fault crossings sever graph edges.",
+    "No source in a connected block, excessive transfer distance, or competing scores leaves the substrate unclassified."
+  ],
+  "output": "Separate substrate-volume.bin, substrate-distance.bin and substrate-status.bin; final volume overlays finite-thickness cover on the inferred substrate in covered columns."
+}

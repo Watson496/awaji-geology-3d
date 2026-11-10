@@ -1,0 +1,23 @@
+{
+  "reference": {
+    "source_symbols_preserved": 22,
+    "unknown_fraction": 0.10061380028431648,
+    "surface_boundary_agreement": 1.0,
+    "ambiguous_fraction": 0.03614812983468756,
+    "notes": "地表は既知の境界条件。単元IDの大小は年代や層序を表さない。未拘束・競合はモデルの制約不足であり、信頼区間ではない。"
+  },
+  "shallow": {
+    "source_symbols_preserved": 22,
+    "unknown_fraction": 0.13069048966143518,
+    "surface_boundary_agreement": 1.0,
+    "ambiguous_fraction": 0.028103590089811677,
+    "notes": "地表は既知の境界条件。単元IDの大小は年代や層序を表さない。未拘束・競合はモデルの制約不足であり、信頼区間ではない。"
+  },
+  "deep": {
+    "source_symbols_preserved": 22,
+    "unknown_fraction": 0.09427135582825003,
+    "surface_boundary_agreement": 1.0,
+    "ambiguous_fraction": 0.04161575436577933,
+    "notes": "地表は既知の境界条件。単元IDの大小は年代や層序を表さない。未拘束・競合はモデルの制約不足であり、信頼区間ではない。"
+  }
+}

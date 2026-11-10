@@ -1,0 +1,122 @@
+{
+  "source_url": "https://www1.kaiho.mlit.go.jp/faults/osakabay1.pdf",
+  "source_sha256": "5b2b68eb6239324e5e395f353c04af6acb20213f6bcfb3442f94308ef60ab266",
+  "title": "岩淵ほか（2000）反射法音波探査に基づく大阪湾の基盤と活構造",
+  "figure": "Fig.22, PDF page 17",
+  "image_pixels": [
+    2480,
+    3507
+  ],
+  "calibration": {
+    "lon_pixels": [
+      489,
+      2192
+    ],
+    "lon_degrees": [
+      134.83333333333334,
+      135.5
+    ],
+    "lat_pixels": [
+      1881,
+      2909
+    ],
+    "lat_degrees": [
+      34.666666666666664,
+      34.333333333333336
+    ],
+    "source_datum": "Tokyo datum assumed; not confirmed in figure, included in 500m horizontal uncertainty"
+  },
+  "picks": [
+    {
+      "id": "osaka2000-fig22-1",
+      "pixel": [
+        772,
+        2792
+      ],
+      "xyz": [
+        494607.5417397042,
+        3803686.8981253654,
+        -1500
+      ],
+      "horizontal_sigma_m": 500,
+      "depth_sigma_m": 300,
+      "kind": "interpreted_acoustic_basement_depth",
+      "native_symbol": null,
+      "contour_depth_m": 1500
+    },
+    {
+      "id": "osaka2000-fig22-2",
+      "pixel": [
+        760,
+        2710
+      ],
+      "xyz": [
+        494177.44070972165,
+        3806635.1173770605,
+        -1500
+      ],
+      "horizontal_sigma_m": 500,
+      "depth_sigma_m": 300,
+      "kind": "interpreted_acoustic_basement_depth",
+      "native_symbol": null,
+      "contour_depth_m": 1500
+    },
+    {
+      "id": "osaka2000-fig22-3",
+      "pixel": [
+        760,
+        2620
+      ],
+      "xyz": [
+        494179.3742571389,
+        3809870.710430303,
+        -1500
+      ],
+      "horizontal_sigma_m": 500,
+      "depth_sigma_m": 300,
+      "kind": "interpreted_acoustic_basement_depth",
+      "native_symbol": null,
+      "contour_depth_m": 1500
+    },
+    {
+      "id": "osaka2000-fig22-4",
+      "pixel": [
+        849,
+        2800
+      ],
+      "xyz": [
+        497378.57949144905,
+        3803398.1774802054,
+        -1000
+      ],
+      "horizontal_sigma_m": 500,
+      "depth_sigma_m": 300,
+      "kind": "interpreted_acoustic_basement_depth",
+      "native_symbol": null,
+      "contour_depth_m": 1000
+    },
+    {
+      "id": "osaka2000-fig22-5",
+      "pixel": [
+        844,
+        2730
+      ],
+      "xyz": [
+        497199.31868574023,
+        3805914.7835830846,
+        -1000
+      ],
+      "horizontal_sigma_m": 500,
+      "depth_sigma_m": 300,
+      "kind": "interpreted_acoustic_basement_depth",
+      "native_symbol": null,
+      "contour_depth_m": 1000
+    }
+  ],
+  "correlation": "Acoustic basin/basement boundary is a structural constraint, not a unique granite/facies code. In this model it constrains the pre-Cenozoic assemblage (pre-Izumi + Izumi) versus younger cover; that correlation is explicitly a hypothesis.",
+  "limitations": [
+    "Five correlated manual picks on two contours, not a complete digitization of the bay.",
+    "Depth conversion uncertainty and assumed source datum prevent sub-grid precision.",
+    "No seabed lithology is assigned from acoustic velocity alone."
+  ]
+}

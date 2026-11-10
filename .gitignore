@@ -1,0 +1,8 @@
+node_modules/
+data/cache/
+data/raw/
+artifacts/
+.venv/
+__pycache__/
+dist/
+data/prepared/fields/

@@ -1,0 +1,1518 @@
+{
+  "sections": [
+    {
+      "id": "akashi-ab",
+      "name": "明石（1990）A–B",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_12083_1990_200dpi.jpg",
+      "source_sha256": "3cfd80d271846981ab0aa5fe62fc62fbccccdd8fba7ef40f58897e3753456732",
+      "attribution": "水野清秀・服部仁・寒川旭・高橋浩（1990）明石地域の地質、5万分の1地質図幅 明石、地質調査所",
+      "route_xy": [
+        [
+          495300.03162433906,
+          3824791.6294683344
+        ],
+        [
+          496559.572607089,
+          3824312.6967741624
+        ],
+        [
+          499746.05425525556,
+          3823113.7853566725
+        ]
+      ],
+      "image": "sections/akashi-ab.png",
+      "image_range_m": [
+        0,
+        4752.087343841855,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6173,
+          4201
+        ],
+        "crop_pixels": [
+          2341,
+          3512,
+          3100,
+          3668
+        ],
+        "sea_level_y": 3590,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp A-B arc length between printed axes",
+        "horizontal_sigma_m": 100,
+        "vertical_sigma_m": 50,
+        "note": "Manual calibration and interpreted geological section, not a borehole observation. Base of colored drawing is the illustration extent, not a geological basal contact."
+      },
+      "picks": [
+        {
+          "id": "akashi-ab-ngd-1",
+          "pixel": [
+            2500,
+            3620
+          ],
+          "xyz": [
+            496230.53010163305,
+            3824437.813158459,
+            -192.30769230769232
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 100,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd = medium-grained hornblende-biotite granodiorite; correlate to seamless massive granodiorite/tonalite, not KG or a generic basement class."
+        },
+        {
+          "id": "akashi-ab-ngd-2",
+          "pixel": [
+            2600,
+            3610
+          ],
+          "xyz": [
+            496816.0881108408,
+            3824216.1830012407,
+            -128.2051282051282
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 100,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd = medium-grained hornblende-biotite granodiorite; correlate to seamless massive granodiorite/tonalite, not KG or a generic basement class."
+        },
+        {
+          "id": "akashi-ab-ngd-3",
+          "pixel": [
+            2800,
+            3600
+          ],
+          "xyz": [
+            497988.0745686067,
+            3823775.2239434132,
+            -64.1025641025641
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 100,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd = medium-grained hornblende-biotite granodiorite; correlate to seamless massive granodiorite/tonalite, not KG or a generic basement class."
+        },
+        {
+          "id": "akashi-ab-ngd-4",
+          "pixel": [
+            2900,
+            3615
+          ],
+          "xyz": [
+            498574.0677974897,
+            3823554.7444145,
+            -160.25641025641025
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 100,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd = medium-grained hornblende-biotite granodiorite; correlate to seamless massive granodiorite/tonalite, not KG or a generic basement class."
+        },
+        {
+          "id": "akashi-ab-iwaya-base-1",
+          "pixel": [
+            2650,
+            3565
+          ],
+          "xyz": [
+            497109.0847252823,
+            3824105.9432367836,
+            160.25641025641025
+          ],
+          "source_symbol": "Iwaya/NGd basal contact",
+          "allowed_symbols": [
+            "Pg2_sbs",
+            "K21_pim_a"
+          ],
+          "kind": "interpreted_section_boundary",
+          "sigma_m": 100,
+          "correlation": "Iwaya strata over NGd; source age revised to Eocene using calcareous nannofossils/dinoflagellates. Contact digitization is approximate.",
+          "correlation_source": "https://www.jstage.jst.go.jp/article/geosoc1893/106/5/106_5_379/_article/-char/ja"
+        },
+        {
+          "id": "akashi-ab-iwaya-base-2",
+          "pixel": [
+            2675,
+            3570
+          ],
+          "xyz": [
+            497255.583032503,
+            3824050.8233545553,
+            128.2051282051282
+          ],
+          "source_symbol": "Iwaya/NGd basal contact",
+          "allowed_symbols": [
+            "Pg2_sbs",
+            "K21_pim_a"
+          ],
+          "kind": "interpreted_section_boundary",
+          "sigma_m": 100,
+          "correlation": "Iwaya strata over NGd; source age revised to Eocene using calcareous nannofossils/dinoflagellates. Contact digitization is approximate.",
+          "correlation_source": "https://www.jstage.jst.go.jp/article/geosoc1893/106/5/106_5_379/_article/-char/ja"
+        },
+        {
+          "id": "akashi-ab-iwaya-base-3",
+          "pixel": [
+            2700,
+            3568
+          ],
+          "xyz": [
+            497402.0813397237,
+            3823995.703472327,
+            141.02564102564102
+          ],
+          "source_symbol": "Iwaya/NGd basal contact",
+          "allowed_symbols": [
+            "Pg2_sbs",
+            "K21_pim_a"
+          ],
+          "kind": "interpreted_section_boundary",
+          "sigma_m": 100,
+          "correlation": "Iwaya strata over NGd; source age revised to Eocene using calcareous nannofossils/dinoflagellates. Contact digitization is approximate.",
+          "correlation_source": "https://www.jstage.jst.go.jp/article/geosoc1893/106/5/106_5_379/_article/-char/ja"
+        }
+      ],
+      "fault_picks": [
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "野島断層",
+          "pixel": [
+            2423,
+            3610
+          ],
+          "xyz": [
+            495779.91134218883,
+            3824609.1581638707,
+            -128.2051282051282
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-野島断層"
+        },
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "野島断層",
+          "pixel": [
+            2430,
+            3630
+          ],
+          "xyz": [
+            495820.8766839565,
+            3824593.581345196,
+            -256.4102564102564
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-野島断層"
+        },
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "中持断層",
+          "pixel": [
+            2715,
+            3590
+          ],
+          "xyz": [
+            497489.9803240562,
+            3823962.63154299,
+            0.0
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-中持断層"
+        },
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "中持断層",
+          "pixel": [
+            2720,
+            3610
+          ],
+          "xyz": [
+            497519.2799855004,
+            3823951.6075665443,
+            -128.2051282051282
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-中持断層"
+        },
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "楠本断層",
+          "pixel": [
+            2988,
+            3600
+          ],
+          "xyz": [
+            499089.74183890666,
+            3823360.7224290557,
+            -64.1025641025641
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-楠本断層"
+        },
+        {
+          "section_id": "akashi-ab",
+          "fault_name": "楠本断層",
+          "pixel": [
+            2980,
+            3630
+          ],
+          "xyz": [
+            499042.862380596,
+            3823378.360791369,
+            -256.4102564102564
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-ab-楠本断層"
+        }
+      ],
+      "used_for_model": true,
+      "fault_lines": [
+        {
+          "id": "akashi-ab-野島断層",
+          "fault_name": "野島断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                2423,
+                3610
+              ],
+              "xyz": [
+                495779.91134218883,
+                3824609.1581638707,
+                -128.2051282051282
+              ]
+            },
+            {
+              "pixel": [
+                2430,
+                3630
+              ],
+              "xyz": [
+                495820.8766839565,
+                3824593.581345196,
+                -256.4102564102564
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        },
+        {
+          "id": "akashi-ab-中持断層",
+          "fault_name": "中持断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                2715,
+                3590
+              ],
+              "xyz": [
+                497489.9803240562,
+                3823962.63154299,
+                0.0
+              ]
+            },
+            {
+              "pixel": [
+                2720,
+                3610
+              ],
+              "xyz": [
+                497519.2799855004,
+                3823951.6075665443,
+                -128.2051282051282
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        },
+        {
+          "id": "akashi-ab-楠本断層",
+          "fault_name": "楠本断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                2988,
+                3600
+              ],
+              "xyz": [
+                499089.74183890666,
+                3823360.7224290557,
+                -64.1025641025641
+              ]
+            },
+            {
+              "pixel": [
+                2980,
+                3630
+              ],
+              "xyz": [
+                499042.862380596,
+                3823378.360791369,
+                -256.4102564102564
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        }
+      ]
+    },
+    {
+      "id": "akashi-cde",
+      "name": "明石（1990）C–D–E",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_12083_1990_200dpi.jpg",
+      "source_sha256": "3cfd80d271846981ab0aa5fe62fc62fbccccdd8fba7ef40f58897e3753456732",
+      "attribution": "地質調査所 5万分の1地質図幅 akashi",
+      "route_xy": [
+        [
+          491468.86614877527,
+          3821531.6422965517
+        ],
+        [
+          494036.97148191126,
+          3820181.941897196
+        ],
+        [
+          495999.73540865176,
+          3819151.700216233
+        ],
+        [
+          499193.8559039865,
+          3819404.6408208464
+        ]
+      ],
+      "image": "sections/akashi-cde.png",
+      "image_range_m": [
+        0,
+        8322.020142521746,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6173,
+          4201
+        ],
+        "crop_pixels": [
+          3482,
+          3512,
+          4766,
+          3668
+        ],
+        "sea_level_y": 3590,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp route; full printed endpoint axes",
+        "horizontal_sigma_m": 150,
+        "vertical_sigma_m": 50,
+        "note": "Printed image frame is NOT proof of geological constraints throughout -500m or across the island. Lithology picks only inside colored interpreted bodies."
+      },
+      "picks": [
+        {
+          "id": "akashi-cde-NGd-0",
+          "pixel": [
+            3700,
+            3610
+          ],
+          "xyz": [
+            492719.58043992013,
+            3820874.3135038204,
+            -128.2051282051282
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-cde-NGd-1",
+          "pixel": [
+            3900,
+            3615
+          ],
+          "xyz": [
+            493867.02474372275,
+            3820271.259565534,
+            -160.25641025641025
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-cde-NGd-2",
+          "pixel": [
+            4100,
+            3600
+          ],
+          "xyz": [
+            495014.7384465049,
+            3819668.718545437,
+            -64.1025641025641
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        }
+      ],
+      "fault_picks": [
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "浅野断層",
+          "pixel": [
+            3733,
+            3570
+          ],
+          "xyz": [
+            492908.90875004756,
+            3820774.809604003,
+            128.2051282051282
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-浅野断層"
+        },
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "浅野断層",
+          "pixel": [
+            3740,
+            3590
+          ],
+          "xyz": [
+            492949.06930068065,
+            3820753.7027161634,
+            0.0
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-浅野断層"
+        },
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "浅野断層",
+          "pixel": [
+            3750,
+            3635
+          ],
+          "xyz": [
+            493006.4415158708,
+            3820723.5500192484,
+            -288.46153846153845
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-浅野断層"
+        },
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "久野々断層",
+          "pixel": [
+            4048,
+            3550
+          ],
+          "xyz": [
+            494716.32070604863,
+            3819825.3560250485,
+            256.4102564102564
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-久野々断層"
+        },
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "久野々断層",
+          "pixel": [
+            4065,
+            3590
+          ],
+          "xyz": [
+            494813.88035196706,
+            3819774.147618253,
+            0.0
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-久野々断層"
+        },
+        {
+          "section_id": "akashi-cde",
+          "fault_name": "久野々断層",
+          "pixel": [
+            4088,
+            3626
+          ],
+          "xyz": [
+            494945.87281409185,
+            3819704.865656117,
+            -230.76923076923077
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-cde-久野々断層"
+        }
+      ],
+      "used_for_model": true,
+      "fault_lines": [
+        {
+          "id": "akashi-cde-浅野断層",
+          "fault_name": "浅野断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                3733,
+                3570
+              ],
+              "xyz": [
+                492908.90875004756,
+                3820774.809604003,
+                128.2051282051282
+              ]
+            },
+            {
+              "pixel": [
+                3740,
+                3590
+              ],
+              "xyz": [
+                492949.06930068065,
+                3820753.7027161634,
+                0.0
+              ]
+            },
+            {
+              "pixel": [
+                3750,
+                3635
+              ],
+              "xyz": [
+                493006.4415158708,
+                3820723.5500192484,
+                -288.46153846153845
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        },
+        {
+          "id": "akashi-cde-久野々断層",
+          "fault_name": "久野々断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                4048,
+                3550
+              ],
+              "xyz": [
+                494716.32070604863,
+                3819825.3560250485,
+                256.4102564102564
+              ]
+            },
+            {
+              "pixel": [
+                4065,
+                3590
+              ],
+              "xyz": [
+                494813.88035196706,
+                3819774.147618253,
+                0.0
+              ]
+            },
+            {
+              "pixel": [
+                4088,
+                3626
+              ],
+              "xyz": [
+                494945.87281409185,
+                3819704.865656117,
+                -230.76923076923077
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        }
+      ]
+    },
+    {
+      "id": "akashi-fg",
+      "name": "明石（1990）F–G",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_12083_1990_200dpi.jpg",
+      "source_sha256": "3cfd80d271846981ab0aa5fe62fc62fbccccdd8fba7ef40f58897e3753456732",
+      "attribution": "地質調査所 5万分の1地質図幅 akashi",
+      "route_xy": [
+        [
+          492696.6324513681,
+          3817979.1093116733
+        ],
+        [
+          494036.97148191126,
+          3820181.941897196
+        ],
+        [
+          496559.572607089,
+          3824312.6967741624
+        ],
+        [
+          499746.0853355648,
+          3829533.2353384467
+        ]
+      ],
+      "image": "sections/akashi-fg.png",
+      "image_range_m": [
+        0,
+        13534.86902171273,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6173,
+          4201
+        ],
+        "crop_pixels": [
+          2489,
+          3877,
+          4619,
+          4033
+        ],
+        "sea_level_y": 3955,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp route; full printed endpoint axes",
+        "horizontal_sigma_m": 150,
+        "vertical_sigma_m": 50,
+        "note": "Printed image frame is NOT proof of geological constraints throughout -500m or across the island. Lithology picks only inside colored interpreted bodies."
+      },
+      "picks": [
+        {
+          "id": "akashi-fg-NGd-0",
+          "pixel": [
+            2900,
+            3980
+          ],
+          "xyz": [
+            494054.2207807479,
+            3820210.1875935066,
+            -160.25641025641025
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-fg-NGd-1",
+          "pixel": [
+            3100,
+            3980
+          ],
+          "xyz": [
+            494716.586609069,
+            3821294.810464862,
+            -160.25641025641025
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-fg-NGd-2",
+          "pixel": [
+            3500,
+            3980
+          ],
+          "xyz": [
+            496041.31826571125,
+            3823464.0562075707,
+            -160.25641025641025
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-fg-NGd-3",
+          "pixel": [
+            3800,
+            3990
+          ],
+          "xyz": [
+            497034.6925960017,
+            3825091.096999153,
+            -224.35897435897436
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "akashi-fg-NGd-4",
+          "pixel": [
+            4100,
+            3990
+          ],
+          "xyz": [
+            498027.8767496878,
+            3826718.2538999934,
+            -224.35897435897436
+          ],
+          "source_symbol": "NGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "NGd: 野島花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        }
+      ],
+      "fault_picks": [
+        {
+          "section_id": "akashi-fg",
+          "fault_name": "久野々断層",
+          "pixel": [
+            2800,
+            3919
+          ],
+          "xyz": [
+            493723.8726124591,
+            3819667.367318375,
+            230.76923076923077
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-fg-久野々断層"
+        },
+        {
+          "section_id": "akashi-fg",
+          "fault_name": "久野々断層",
+          "pixel": [
+            2792,
+            3960
+          ],
+          "xyz": [
+            493697.44842825097,
+            3819623.9394596815,
+            -32.05128205128205
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-fg-久野々断層"
+        },
+        {
+          "section_id": "akashi-fg",
+          "fault_name": "久野々断層",
+          "pixel": [
+            2783,
+            3998
+          ],
+          "xyz": [
+            493667.72122101684,
+            3819575.0831186515,
+            -275.64102564102564
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "akashi-fg-久野々断層"
+        }
+      ],
+      "used_for_model": true,
+      "fault_lines": [
+        {
+          "id": "akashi-fg-久野々断層",
+          "fault_name": "久野々断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                2800,
+                3919
+              ],
+              "xyz": [
+                493723.8726124591,
+                3819667.367318375,
+                230.76923076923077
+              ]
+            },
+            {
+              "pixel": [
+                2792,
+                3960
+              ],
+              "xyz": [
+                493697.44842825097,
+                3819623.9394596815,
+                -32.05128205128205
+              ]
+            },
+            {
+              "pixel": [
+                2783,
+                3998
+              ],
+              "xyz": [
+                493667.72122101684,
+                3819575.0831186515,
+                -275.64102564102564
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        }
+      ]
+    },
+    {
+      "id": "sumoto-ab",
+      "name": "洲本（1992）A–B",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_13011_1992_200dpi.jpg",
+      "source_sha256": "caa5702d9f1cb942839771a0d85ecf62193b3ddc075123cdaa9995bde6e2dc9a",
+      "attribution": "地質調査所 5万分の1地質図幅 sumoto",
+      "route_xy": [
+        [
+          493123.20070489857,
+          3817968.0603350974
+        ],
+        [
+          493238.6604017878,
+          3811144.168063426
+        ]
+      ],
+      "image": "sections/sumoto-ab.png",
+      "image_range_m": [
+        0,
+        6824.8689860672785,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6152,
+          4215
+        ],
+        "crop_pixels": [
+          2096,
+          3495,
+          3121,
+          3651
+        ],
+        "sea_level_y": 3573,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp route; full printed endpoint axes",
+        "horizontal_sigma_m": 150,
+        "vertical_sigma_m": 50,
+        "note": "Printed image frame is NOT proof of geological constraints throughout -500m or across the island. Lithology picks only inside colored interpreted bodies."
+      },
+      "picks": [],
+      "fault_picks": [],
+      "used_for_model": false,
+      "fault_lines": []
+    },
+    {
+      "id": "sumoto-cde",
+      "name": "洲本（1992）C–D–E",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_13011_1992_200dpi.jpg",
+      "source_sha256": "caa5702d9f1cb942839771a0d85ecf62193b3ddc075123cdaa9995bde6e2dc9a",
+      "attribution": "地質調査所 5万分の1地質図幅 sumoto",
+      "route_xy": [
+        [
+          482710.78522103414,
+          3814711.638356162
+        ],
+        [
+          488841.14005343046,
+          3806468.2623631638
+        ],
+        [
+          488638.4219985219,
+          3799494.787403305
+        ]
+      ],
+      "image": "sections/sumoto-cde.png",
+      "image_range_m": [
+        0,
+        17249.41932969325,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6152,
+          4215
+        ],
+        "crop_pixels": [
+          2183,
+          3877,
+          4901,
+          4033
+        ],
+        "sea_level_y": 3955,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp route; full printed endpoint axes",
+        "horizontal_sigma_m": 150,
+        "vertical_sigma_m": 50,
+        "note": "Printed image frame is NOT proof of geological constraints throughout -500m or across the island. Lithology picks only inside colored interpreted bodies."
+      },
+      "picks": [
+        {
+          "id": "sumoto-cde-SGd-0",
+          "pixel": [
+            4380,
+            3990
+          ],
+          "xyz": [
+            488734.4996792956,
+            3802799.8472381514,
+            -224.35897435897436
+          ],
+          "source_symbol": "SGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "SGd: 先山花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "sumoto-cde-SGd-1",
+          "pixel": [
+            4560,
+            3990
+          ],
+          "xyz": [
+            488701.30585484405,
+            3801657.9839554788,
+            -224.35897435897436
+          ],
+          "source_symbol": "SGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "SGd: 先山花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        }
+      ],
+      "fault_picks": [
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "安乎断層",
+          "pixel": [
+            3644,
+            3938
+          ],
+          "xyz": [
+            488243.82294977497,
+            3807271.4637449924,
+            108.97435897435898
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-安乎断層"
+        },
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "安乎断層",
+          "pixel": [
+            3624,
+            3990
+          ],
+          "xyz": [
+            488168.0797912706,
+            3807373.31418457,
+            -224.35897435897436
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-安乎断層"
+        },
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "安乎断層",
+          "pixel": [
+            3605,
+            4036
+          ],
+          "xyz": [
+            488096.12379069155,
+            3807470.0721021695,
+            -519.2307692307693
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-安乎断層"
+        },
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "厚浜断層",
+          "pixel": [
+            4273,
+            3946
+          ],
+          "xyz": [
+            488754.23156383063,
+            3803478.621522851,
+            57.69230769230769
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-厚浜断層"
+        },
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "厚浜断層",
+          "pixel": [
+            4255,
+            4000
+          ],
+          "xyz": [
+            488757.5509462758,
+            3803592.807851118,
+            -288.46153846153845
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-厚浜断層"
+        },
+        {
+          "section_id": "sumoto-cde",
+          "fault_name": "厚浜断層",
+          "pixel": [
+            4243,
+            4037
+          ],
+          "xyz": [
+            488759.7638679059,
+            3803668.932069963,
+            -525.6410256410256
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-cde-厚浜断層"
+        }
+      ],
+      "used_for_model": true,
+      "fault_lines": [
+        {
+          "id": "sumoto-cde-安乎断層",
+          "fault_name": "安乎断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                3644,
+                3938
+              ],
+              "xyz": [
+                488243.82294977497,
+                3807271.4637449924,
+                108.97435897435898
+              ]
+            },
+            {
+              "pixel": [
+                3624,
+                3990
+              ],
+              "xyz": [
+                488168.0797912706,
+                3807373.31418457,
+                -224.35897435897436
+              ]
+            },
+            {
+              "pixel": [
+                3605,
+                4036
+              ],
+              "xyz": [
+                488096.12379069155,
+                3807470.0721021695,
+                -519.2307692307693
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        },
+        {
+          "id": "sumoto-cde-厚浜断層",
+          "fault_name": "厚浜断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                4273,
+                3946
+              ],
+              "xyz": [
+                488754.23156383063,
+                3803478.621522851,
+                57.69230769230769
+              ]
+            },
+            {
+              "pixel": [
+                4255,
+                4000
+              ],
+              "xyz": [
+                488757.5509462758,
+                3803592.807851118,
+                -288.46153846153845
+              ]
+            },
+            {
+              "pixel": [
+                4243,
+                4037
+              ],
+              "xyz": [
+                488759.7638679059,
+                3803668.932069963,
+                -525.6410256410256
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        }
+      ]
+    },
+    {
+      "id": "sumoto-fgh",
+      "name": "洲本（1992）F–G–H",
+      "source_url": "https://www.gsj.jp/data/50KGM/JPG/GSJ_MAP_G050_13011_1992_200dpi.jpg",
+      "source_sha256": "caa5702d9f1cb942839771a0d85ecf62193b3ddc075123cdaa9995bde6e2dc9a",
+      "attribution": "地質調査所 5万分の1地質図幅 sumoto",
+      "route_xy": [
+        [
+          478285.88839742495,
+          3807630.4274653113
+        ],
+        [
+          483822.83931403316,
+          3801555.6115724677
+        ],
+        [
+          483864.0812370469,
+          3799500.5312862694
+        ]
+      ],
+      "image": "sections/sumoto-fgh.png",
+      "image_range_m": [
+        0,
+        10275.056930236718,
+        -500,
+        500
+      ],
+      "calibration": {
+        "original_image_pixels": [
+          6152,
+          4215
+        ],
+        "crop_pixels": [
+          3434,
+          3495,
+          5007,
+          3651
+        ],
+        "sea_level_y": 3573,
+        "pixels_per_500m": 78,
+        "horizontal": "GSJ sec.shp route; full printed endpoint axes",
+        "horizontal_sigma_m": 150,
+        "vertical_sigma_m": 50,
+        "note": "Printed image frame is NOT proof of geological constraints throughout -500m or across the island. Lithology picks only inside colored interpreted bodies."
+      },
+      "picks": [
+        {
+          "id": "sumoto-fgh-SGd-0",
+          "pixel": [
+            3650,
+            3620
+          ],
+          "xyz": [
+            479236.3426494992,
+            3806587.645132059,
+            -301.28205128205127
+          ],
+          "source_symbol": "SGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "SGd: 先山花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "sumoto-fgh-SGd-1",
+          "pixel": [
+            4100,
+            3620
+          ],
+          "xyz": [
+            481216.455674654,
+            3804415.181937785,
+            -301.28205128205127
+          ],
+          "source_symbol": "SGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "SGd: 先山花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        },
+        {
+          "id": "sumoto-fgh-SGd-2",
+          "pixel": [
+            4800,
+            3620
+          ],
+          "xyz": [
+            483836.9513154746,
+            3800852.412161729,
+            -301.28205128205127
+          ],
+          "source_symbol": "SGd",
+          "allowed_symbols": [
+            "K21_pim_a"
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_lithology",
+          "correlation": "SGd: 先山花崗閃緑岩 -> seamless massive granodiorite/tonalite; lithologic correlation hypothesis, not identical original legends."
+        }
+      ],
+      "fault_picks": [
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "鮎原南断層",
+          "pixel": [
+            4280,
+            3560
+          ],
+          "xyz": [
+            482008.50088471593,
+            3803546.1966600744,
+            83.33333333333333
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-鮎原南断層"
+        },
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "鮎原南断層",
+          "pixel": [
+            4260,
+            3610
+          ],
+          "xyz": [
+            481920.4958613757,
+            3803642.75057982,
+            -237.17948717948718
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-鮎原南断層"
+        },
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "鮎原南断層",
+          "pixel": [
+            4247,
+            3645
+          ],
+          "xyz": [
+            481863.29259620456,
+            3803705.5106276553,
+            -461.53846153846155
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-鮎原南断層"
+        },
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "奥畑断層",
+          "pixel": [
+            4598,
+            3538
+          ],
+          "xyz": [
+            483407.7807558253,
+            3802010.989336121,
+            224.35897435897436
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-奥畑断層"
+        },
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "奥畑断層",
+          "pixel": [
+            4578,
+            3590
+          ],
+          "xyz": [
+            483319.77573248505,
+            3802107.5432558665,
+            -108.97435897435898
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-奥畑断層"
+        },
+        {
+          "section_id": "sumoto-fgh",
+          "fault_name": "奥畑断層",
+          "pixel": [
+            4559,
+            3646
+          ],
+          "xyz": [
+            483236.1709603119,
+            3802199.2694796245,
+            -467.94871794871796
+          ],
+          "sigma_m": 150,
+          "kind": "interpreted_section_fault_intersection",
+          "fault_line_id": "sumoto-fgh-奥畑断層"
+        }
+      ],
+      "used_for_model": true,
+      "fault_lines": [
+        {
+          "id": "sumoto-fgh-鮎原南断層",
+          "fault_name": "鮎原南断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                4280,
+                3560
+              ],
+              "xyz": [
+                482008.50088471593,
+                3803546.1966600744,
+                83.33333333333333
+              ]
+            },
+            {
+              "pixel": [
+                4260,
+                3610
+              ],
+              "xyz": [
+                481920.4958613757,
+                3803642.75057982,
+                -237.17948717948718
+              ]
+            },
+            {
+              "pixel": [
+                4247,
+                3645
+              ],
+              "xyz": [
+                481863.29259620456,
+                3803705.5106276553,
+                -461.53846153846155
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        },
+        {
+          "id": "sumoto-fgh-奥畑断層",
+          "fault_name": "奥畑断層",
+          "sigma_m": 150,
+          "points": [
+            {
+              "pixel": [
+                4598,
+                3538
+              ],
+              "xyz": [
+                483407.7807558253,
+                3802010.989336121,
+                224.35897435897436
+              ]
+            },
+            {
+              "pixel": [
+                4578,
+                3590
+              ],
+              "xyz": [
+                483319.77573248505,
+                3802107.5432558665,
+                -108.97435897435898
+              ]
+            },
+            {
+              "pixel": [
+                4559,
+                3646
+              ],
+              "xyz": [
+                483236.1709603119,
+                3802199.2694796245,
+                -467.94871794871796
+              ]
+            }
+          ],
+          "kind": "interpreted_fault_curve"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "method": "Shared categorical fields with fault-blocked diffusion; marching cubes and constrained contour triangulation",
+  "display_smoothing": "3 symmetric diffusion steps, weights x/y=.05, z=.01; zero flux across fault barriers",
+  "terrain_spacing_m": [
+    98.8276494466017,
+    90.43382804104006
+  ],
+  "note": "表示用補間。元の推定結果・精度・カテゴリ格子は変更しない。断層を越える平滑化は遮断。"
+}

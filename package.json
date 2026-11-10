@@ -1,0 +1,39 @@
+{
+  "name": "awaji-geology-3d",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "uv run python scripts/prepare.py",
+    "model": "uv run python scripts/model.py && uv run python scripts/mesh.py && uv run python scripts/fault_display.py",
+    "start": "vite",
+    "test": "uv run python -m unittest discover -s tests",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "mesh": "uv run python scripts/mesh.py",
+    "test:geometry": "node --test tests/*.test.mjs",
+    "validate": "uv run python scripts/audit.py && uv run python scripts/validate_sections.py",
+    "fault-display": "uv run python scripts/fault_display.py"
+  },
+  "dependencies": {
+    "@mantine/core": "^9.7.3",
+    "@mantine/hooks": "^9.7.3",
+    "@tabler/icons-react": "^3.49.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}

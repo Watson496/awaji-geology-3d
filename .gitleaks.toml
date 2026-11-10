@@ -1,0 +1,16 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Published GSJ geological legend symbol, verified against the source legend"
+condition = "AND"
+paths = ['''^(data/prepared/metadata\.json|web/data/(model|rock-bodies)\.json)$''']
+regexTarget = "line"
+regexes = ['''^\s*"key": "K2-Pg12_mgmpe_lks",\s*$''']
+
+[[allowlists]]
+description = "Published GSJ legend symbol in the explicit geological age/type crosswalk"
+condition = "AND"
+paths = ['''^scripts/rock_bodies\.py$''']
+regexTarget = "line"
+regexes = ["if key == 'K2-Pg12_mgmpe_lks': return '変成岩類'"]

@@ -1,0 +1,292 @@
+{
+  "source": "GSI urban active fault map (afm tiles), checked against supplied screenshots",
+  "image_sha256": "d39c27f69fe2a5c67cc1f8cd7e0f2154884ff147b0c9126810ad6184cd0be443",
+  "image_size": [
+    2400,
+    3200
+  ],
+  "legend_url": "https://www.gsi.go.jp/common/000084060.pdf",
+  "guidebook_url": "https://www.gsi.go.jp/common/000096723.pdf",
+  "observations": [
+    {
+      "id": "gsi-shizuki-west-down",
+      "fault_name": "志筑断層",
+      "pixels": [
+        [
+          1365,
+          1024
+        ],
+        [
+          1360,
+          1024
+        ]
+      ],
+      "sense": "reverse",
+      "sense_source": "GSI 2014 printed p11: N-S Shizuki/Senzan/Yura/Hansanji reverse-fault interpretation",
+      "anchor_xy": [
+        487526.9656395123,
+        3816484.2422506423
+      ],
+      "downthrow_azimuth_deg": 270.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_side_azimuth_deg": 90.0
+    },
+    {
+      "id": "gsi-senzan-east-down",
+      "fault_name": "先山断層",
+      "pixels": [
+        [
+          1323,
+          1741
+        ],
+        [
+          1328,
+          1741
+        ]
+      ],
+      "sense": "reverse",
+      "sense_source": "GSI 2014 printed pp11,16: reverse fault, local trench west dip",
+      "anchor_xy": [
+        486833.1448266417,
+        3804788.864166225
+      ],
+      "downthrow_azimuth_deg": 90.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_side_azimuth_deg": 270.0
+    },
+    {
+      "id": "gsi-mtl-west-south-down",
+      "fault_id": "major:081-01-02:2648",
+      "pixels": [
+        [
+          308,
+          3174
+        ],
+        [
+          308,
+          3177
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        470065.80851560255,
+        3781414.419542836
+      ],
+      "downthrow_azimuth_deg": 180.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 180.0
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 0.0
+        }
+      ]
+    },
+    {
+      "id": "gsi-mtl-west2-south-down",
+      "fault_id": "major:081-01-02:2649",
+      "pixels": [
+        [
+          508,
+          3168
+        ],
+        [
+          508,
+          3171
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        473369.71714831964,
+        3781512.288815509
+      ],
+      "downthrow_azimuth_deg": 180.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 180.0
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 0.0
+        }
+      ]
+    },
+    {
+      "id": "gsi-mtl-diagonal-se-down",
+      "fault_id": "major:081-01-02:2650",
+      "pixels": [
+        [
+          628,
+          3131
+        ],
+        [
+          630,
+          3134
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        475352.06232794985,
+        3782115.815996992
+      ],
+      "downthrow_azimuth_deg": 145.9740492060425,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 145.9740492060425
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 325.97404920604254
+        }
+      ]
+    },
+    {
+      "id": "gsi-mtl-east-north-down",
+      "fault_id": "major:081-01-02:2655",
+      "pixels": [
+        [
+          1535,
+          2809
+        ],
+        [
+          1535,
+          2805
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        490335.28797732183,
+        3787368.13363044
+      ],
+      "downthrow_azimuth_deg": 0.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 0.0
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 180.0
+        }
+      ]
+    },
+    {
+      "id": "gsi-mtl-east-south-down",
+      "fault_id": "major:081-01-02:2646",
+      "pixels": [
+        [
+          1885,
+          2780
+        ],
+        [
+          1885,
+          2784
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        496117.1280845767,
+        3787841.1684483597
+      ],
+      "downthrow_azimuth_deg": 180.0,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 180.0
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 0.0
+        }
+      ]
+    },
+    {
+      "id": "gsi-mtl-splay-se-down",
+      "fault_id": "major:081-01-02:2647",
+      "pixels": [
+        [
+          1745,
+          2729
+        ],
+        [
+          1747,
+          2732
+        ]
+      ],
+      "sense": null,
+      "anchor_xy": [
+        493804.39204167476,
+        3788673.05726608
+      ],
+      "downthrow_azimuth_deg": 145.97404920634216,
+      "dip_angle_deg": null,
+      "reading": "manual reading of glyph SIDE on georeferenced official raster; not a surveyed tick endpoint",
+      "position_sigma_m": 250,
+      "dip_sense_alternatives": [
+        {
+          "sense": "normal component",
+          "dip_side_azimuth_deg": 145.97404920634216
+        },
+        {
+          "sense": "reverse component",
+          "dip_side_azimuth_deg": 325.97404920634216
+        }
+      ]
+    }
+  ],
+  "local_numeric_observations_not_transferred_to_whole_fault": [
+    {
+      "fault": "先山断層",
+      "site": "洲本市安坂 trench",
+      "dip_range_deg": [
+        10,
+        20
+      ],
+      "direction": "west",
+      "source_page": 16,
+      "scope": "shallow trench only; exact trench location/depth not registered, so not applied as a whole-fault 15deg plane"
+    },
+    {
+      "fault": "安乎断層",
+      "site": "southern exposure",
+      "dip_deg": 70,
+      "direction": "west",
+      "source_page": 17,
+      "scope": "local exposure; source notes near-surface shallowing/gravitational spreading"
+    },
+    {
+      "fault": "鳴門南断層",
+      "site": "鳴門市段関 boreholes",
+      "dip_range_deg": [
+        65,
+        75
+      ],
+      "direction": "north",
+      "source_page": 23,
+      "scope": "local borehole interpretation, not every MTL strand"
+    }
+  ]
+}

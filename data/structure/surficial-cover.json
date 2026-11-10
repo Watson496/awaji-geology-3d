@@ -1,0 +1,130 @@
+{
+  "status": "Regional thickness sensitivity hypotheses informed by local reports; NOT measured island-wide maxima. No site-specific basal picks are registered yet.",
+  "vertical_grid_m": 50,
+  "sources": [
+    {
+      "id": "akashi",
+      "url": "https://www.gsj.jp/data/50KGM/PDF/GSJ_MAP_G050_12083_1990_D.pdf",
+      "file": "data/raw/akashi-report.pdf",
+      "sha256": "d6463f8cca409e0b6df3f239b873acfba83acc1cbb90313190524bcb770a8141",
+      "printed_pages": [
+        46,
+        47,
+        49,
+        50,
+        54
+      ]
+    },
+    {
+      "id": "sumoto",
+      "url": "https://www.gsj.jp/data/50KGM/PDF/GSJ_MAP_G050_13011_1992_D.pdf",
+      "file": "data/raw/sumoto-report.pdf",
+      "sha256": "ce43b7df46100707fbfa66d2545a02a76465fceed2def2ef031df2902a6e2bc9",
+      "printed_pages": [
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "source": "akashi",
+      "printed_page": 54,
+      "units": "alluvial deposits in northern Awaji",
+      "thickness_m": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "status": "local section descriptions; no registered XYZ"
+    },
+    {
+      "source": "akashi",
+      "printed_pages": [
+        46,
+        47
+      ],
+      "units": "low terrace deposits at Ezaki",
+      "thickness_m": [
+        16,
+        22.5,
+        15
+      ],
+      "status": "22.5 and 15 are LOWER BOUNDS (at least); not maximum thicknesses"
+    },
+    {
+      "source": "sumoto",
+      "printed_pages": [
+        62,
+        64,
+        65,
+        66
+      ],
+      "units": "marine and fluvial terrace deposits",
+      "thickness_scale_m": [
+        2,
+        10
+      ],
+      "status": "local observed examples; some columns have unexposed bases"
+    },
+    {
+      "source": "sumoto",
+      "printed_page": 68,
+      "units": "alluvial deposits at Gunge, Taga, Otani, Shizuki",
+      "thickness_m": [
+        11.5,
+        7.6,
+        12,
+        4
+      ],
+      "status": "local descriptions; not island-wide upper bounds"
+    }
+  ],
+  "units": {
+    "H2_or": {
+      "scenario_thickness_m": {
+        "shallow": 2,
+        "reference": 8,
+        "deep": 15
+      },
+      "interpretation": "engineering-scale assumption; no local fill boreholes fitted",
+      "status": "assumed finite-depth envelope; scenario values are not measurements or confidence bounds"
+    },
+    "H_sad": {
+      "scenario_thickness_m": {
+        "shallow": 15,
+        "reference": 30,
+        "deep": 60
+      },
+      "interpretation": "alluvial infill",
+      "status": "assumed finite-depth envelope; scenario values are not measurements or confidence bounds"
+    },
+    "Q31_std": {
+      "scenario_thickness_m": {
+        "shallow": 20,
+        "reference": 40,
+        "deep": 80
+      },
+      "interpretation": "older terrace remnant",
+      "status": "assumed finite-depth envelope; scenario values are not measurements or confidence bounds"
+    },
+    "Q32-33_std": {
+      "scenario_thickness_m": {
+        "shallow": 15,
+        "reference": 35,
+        "deep": 70
+      },
+      "interpretation": "younger terrace remnant, includes thick northern fan deposits",
+      "status": "assumed finite-depth envelope; scenario values are not measurements or confidence bounds"
+    }
+  }
+}
