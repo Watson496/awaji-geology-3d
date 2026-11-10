@@ -1015,7 +1015,7 @@ export function createViewer(view, callbacks = {}) {
 			transparent: true,
 			opacity: 1,
 		});
-		// Avoid compositing the same reference map twice over modeled land at partial opacity.
+		// 半透明の参照地図が、モデル化した陸域で二重に合成されるのを防ぐ。
 		const outsideCanvas = document.createElement("canvas");
 		outsideCanvas.width = activeMapTexture.image.width;
 		outsideCanvas.height = activeMapTexture.image.height;

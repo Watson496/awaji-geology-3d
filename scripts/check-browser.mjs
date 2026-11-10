@@ -60,7 +60,7 @@ assert.equal(defaultLayers.surfaceEnabled, true);
 assert.equal(defaultLayers.surfaceVisible, true);
 assert.equal(defaultLayers.faultPlanes, true);
 assert.ok(defaultLayers.faultCount > 0 && defaultLayers.faultPlaneCount > 0);
-// The interaction fixture below starts without overlays; initial defaults are verified separately.
+// 操作の検証は重ね合わせ図を非表示にして始める。初期表示は別に検証する。
 for (const [field, label] of [
 	["surfaceEnabled", "地表地質図"],
 	["faultPlanes", "地下の推定面"],

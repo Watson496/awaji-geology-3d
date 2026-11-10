@@ -1,9 +1,8 @@
-"""Infer substrate independently of the younger surficial-cover observations.
+"""若い表層被覆の観測から独立に、下位の基盤を推定する。
 
-Covered ground is NOT a negative observation of every older unit. Its substrate
-boundary is free. Outcrop labels and registered interpreted sections anchor
-nonnegative fields on the same finite-fault graph as the structural model.
-Normalized evidence scores are heuristics, never calibrated probabilities.
+被覆域は古い各単元の不在を示す観測とはみなさず、基盤の境界を自由にする。
+露頭ラベルと位置を付与した解釈断面を、構造モデルと同じ有限断層グラフ上の
+非負の場の拘束に使う。正規化した証拠のスコアは経験的な尺度であり、校正済みの確率ではない。
 """
 import json
 import numpy as np
@@ -18,7 +17,7 @@ from surficial_cover import policy
 CONFIG=ROOT/'data/structure/substrate-policy.json'
 
 def infer_fields(offdiag,degree,fixed,truth,unit_ids,priors,picks,screen=.02):
-    """One-hot outcrop evidence; no artificial negative boundary on covered ground."""
+    """露頭の証拠をone-hotで表し、被覆域に不在を示す境界を設けない。"""
     n=len(degree);free=~fixed
     penalty=np.zeros(n,np.float32)
     for pick,j,weight in picks:penalty[j]+=weight
@@ -44,7 +43,7 @@ def infer_fields(offdiag,degree,fixed,truth,unit_ids,priors,picks,screen=.02):
     return fields,audit
 
 def source_distances(offdiag,fixed,picks,scale):
-    """Shortest physical path to actual constraints; cannot cross closed faults."""
+    """実際の制約点までの物理的な最短経路を求める。閉じた断層は越えない。"""
     sources=fixed.copy()
     for _,j,_ in picks:sources[j]=True
     if not sources.any():return np.full(len(fixed),np.inf)
@@ -52,7 +51,7 @@ def source_distances(offdiag,fixed,picks,scale):
     return dijkstra(graph,directed=False,indices=np.flatnonzero(sources),min_only=True)
 
 def gate_native_fields(fields,offdiag,fixed,truth,picks,scale,limit):
-    """A source of some OTHER unit cannot license a facies introduced by a prior."""
+    """他の単元の出典を、事前分布によって導入した岩相の根拠にはしない。"""
     distances={}
     for uid in fields:
         matching=[p for p in picks if uid in p[0]]
@@ -88,10 +87,10 @@ def infer(meta,s,scenario,rock,top,offdiag,degree,mapped_picks,closed,marine_gri
     package_scores=np.zeros((*rock.shape,len(base_packages)),np.float32);masses=[]
     for gi,p in enumerate(base_packages):
         mass=sum(fields[uid] for uid in p['unit_ids'])
-        # Same regional acoustic hypothesis; does not identify a granite facies.
+        # 同じ広域の音響基盤の仮説を使い、花崗岩の岩相の識別には使わない。
         mass=mass*np.exp(.35*marine_grid[rock]*(1 if gi<2 else -1))
         masses.append(mass);package_scores[...,gi][rock]=mass
-    # Surface age is constrained ONLY where the older substrate is exposed.
+    # 地表の年代を制約するのは、古い基盤が露出する場所だけとする。
     surface_package=mapping[s['surface']].copy()
     surface_package[np.isin(s['surface'],[u['id'] for u in meta['units'] if u['key'] in cover_symbols])]=-1
     parent=ordered_packages(package_scores,rock,closed[2],surface_package)
@@ -126,7 +125,7 @@ def infer(meta,s,scenario,rock,top,offdiag,degree,mapped_picks,closed,marine_gri
     return base,parent,report,status_grid
 
 def compose(existing,existing_packages,substrate,substrate_packages,surface,meta):
-    """Retain the finite cover; replace its entire underlying column coherently."""
+    """有限の被覆を保持し、その下の列全体を整合的に置き換える。"""
     ids=[u['id'] for u in meta['units'] if u['key'] in policy()['units']]
     columns=np.isin(surface,ids);cover=np.isin(existing,ids)
     region=columns[...,None]&(existing>0)&~cover

@@ -1,8 +1,8 @@
-"""Resolve duplicate cartographic traces without changing structural constraints.
+"""構造上の制約を保ったまま、表示用の断層線の重複を解消する。
 
-Original vectors remain in faults.json. Matching uses direction and proximity,
-not proximity alone. An active-segment overview with explicit model_aliases is
-replaced by those separate strands, never by a single merged fault plane.
+元のベクトルはfaults.jsonに保持する。対応判定には、近さと方向の両方を使う。
+model_aliasesを明示した活断層の概略線は、対応する個別の断層線に置き換える。
+単一の断層面には統合しない。
 """
 import hashlib,json,math,re
 from pathlib import Path
@@ -17,9 +17,9 @@ def named(f):
 def build(catalog):
     groups={};samples=[];directions=[];owners=[];sample_layers=[];audit=[]
     faults=catalog['faults'];lookup={f['id']:f for f in faults}
-    # Original geological mapping is the detailed trace; regional overlays fill gaps.
+    # 原地質図の線を詳細な断層線とし、広域の重ね合わせ図で欠けた範囲を補う。
     ordered=sorted(faults,key=lambda f:({'seamless':0,'active':1,'major':2}[f['layer']],f['id']))
-    # Explicit individual marine strands outrank their aggregate overview.
+    # 個別に明示された海域の断層線を、それらをまとめた概略線より優先する。
     strands={a for f in faults for a in f.get('model_aliases',[])}
     ordered.sort(key=lambda f:0 if f['layer']=='seamless' else 1 if f['id'] in strands else 2 if f['layer']=='active' else 3)
     tree=None
@@ -36,7 +36,7 @@ def build(catalog):
                 delta=b[:2]-a[:2];length=np.linalg.norm(delta)
                 if length<1e-6:continue
                 direction=delta/length
-                # Subdivide only coarse overlapping segments; fine mapping vertices stay intact.
+                # 重複する粗い線分だけを分割し、詳細な地図の頂点は保持する。
                 count=max(1,math.ceil(length/100)) if f['layer']!='seamless' else 1
                 for j in range(count):
                     p=a+(b-a)*(j/count);q=a+(b-a)*((j+1)/count);mid=(p[:2]+q[:2])/2
@@ -55,11 +55,11 @@ def build(catalog):
                         if not run:run=[p.tolist()]
                         run.append(q.tolist())
             if len(run)>1:kept.append(run)
-            if f['layer']=='seamless':kept=[trace]  # original high-detail vertices, no resampling
+            if f['layer']=='seamless':kept=[trace]  # 原図の詳細な頂点を、再標本化せずに使う
             for target,overlap in matched.items():
                 g=groups[target]
                 if f['id'] not in g['source_ids']:g['source_ids'].append(f['id'])
-                # Selection aliases preserve underlying separate structural surfaces.
+                # 選択用の別名を使っても、元の構造面は個別に保持する。
                 if f['id'] not in g['model_aliases']:g['model_aliases'].append(f['id'])
             group['traces'].extend(kept)
             group['trace_styles'].extend([{'dashed':bool(f.get('dashed')),'source_id':f['id'],'source_trace':ti} for t in kept])

@@ -1,7 +1,7 @@
-"""Infer fault attitudes from georeferenced section curves, preserving map traces.
+"""地図上の断層線を保持し、位置を付与した断面曲線から断層の姿勢を推定する。
 
-Signed dip polarities are a mixture, NOT vectors averaged to an artificial
-vertical fault. Analogue weights are modelling weights, not probabilities.
+傾斜の向きが異なる場合は混合として扱い、ベクトル平均で鉛直断層を作らない。
+類似例の重みはモデル上の重みであり、確率ではない。
 """
 import numpy as np
 
@@ -21,7 +21,7 @@ def nearest_foot(trace,point):
         t=np.clip((np.asarray(point[:2])-a[:2])@v/(length*length),0,1);foot=a+t*(b-a);distance=np.linalg.norm(np.asarray(point[:2])-foot[:2])
         if best is None or distance<best[0]:
             s=chain[i]+t*length
-            # Smooth the local strike over 300m, without moving the original line.
+            # 元の線を動かさず、局所的な走向を300mの範囲で平滑化する。
             ab=np.array([[np.interp(np.clip(s+d,0,chain[-1]),chain,trace[:,axis]) for axis in range(2)] for d in [-150,150]])
             tangent=ab[1]-ab[0];tangent/=np.linalg.norm(tangent)
             best=(distance,foot,np.array([-tangent[1],tangent[0]]))
@@ -44,7 +44,7 @@ def analogue_ensemble(normal,anchor,seeds):
     plus=sum(w for s,w,p,d in eligible if p==1);minus=sum(w for s,w,p,d in eligible if p==-1);sign=1 if plus>=minus else -1
     ambiguous=min(plus,minus)/max(plus+minus,1e-10)>.25
     angle=weighted_quantile(dip,weights,.5)
-    # Sensitivity margin, not a confidence interval or a measured angle.
+    # 感度解析の余裕幅であり、信頼区間や実測の角度ではない。
     low=max(15.,weighted_quantile(dip,weights,.2)-10);high=min(89.,weighted_quantile(dip,weights,.8)+10)
     def case(di,sgn):
         direction=normal*sgn
@@ -86,23 +86,22 @@ def constrain(faults,sections):
         else:
             profile=fault.get('profile_depth_dip');kind=fault['attitude_kind']
             if profile and kind.startswith('published'):
-                # These records encode a published DIRECTION with a numerical
-                # placeholder, not a measured numerical dip. Do not seed other
-                # faults with that placeholder as if it were an observation.
+                # これらの記録は、公表された方向を仮の数値で表す。
+                # 傾斜角の実測値ではないため、他の断層の観測値として流用しない。
                 fault['published_direction_constraint']={'azimuth_deg':fault['dip_azimuth_deg'],'source':fault.get('attitude_source'),'notes':fault['notes']}
                 fault['legacy_angle_prior_deg']=profile[0][1]
                 fault['attitude_kind']='unresolved_orientation'
-    # A REGIONAL high-angle prior, not a fabricated measured point. Its centre
-    # is just the weighting kernel centre of the Kitan-Naruto coverage region.
-    # 75deg is the midpoint of a 60..90 high-angle sensitivity range. It is not
-    # the measured dip of every strand. Individual mapped strands stay separate.
+    # 広域の高角度の事前分布を与え、その中心を実測点とはみなさない。
+    # 中心は紀淡・鳴門の対象範囲に使う重み関数の中心である。
+    # 75度は感度解析の範囲60〜90度の中点であり、各断層線の実測傾斜ではない。
+    # 地図上の各断層線は分けて保持する。
     from prepare import FWD
     centre=[*FWD.transform(134.835,34.205),0.]
     seeds.append({'id':'HERP2017-MTL-shallow-regional-prior','anchor_xyz':centre,'normal_xy':[0.,1.],'dip_direction_xy':[0.,1.],'dip_deg':75.,'weight':.25,'scope':'regional prior coverage centre, NOT an observation location','source':'HERP 2017 MTL evaluation: high angle near seabed; deep 30deg not transferred to shallow branches'})
     for fault in faults:
         if fault.get('layer')!='seamless' and not fault.get('structural_candidate'):continue
-        # Every formerly-unknown attitude is inferred from eligible evidence or
-        # remains unresolved WITHOUT constructing a vertical plane.
+        # 姿勢は適格な証拠から推定できる場合だけ与え、
+        # 推定できない場合は鉛直面を作らず、未拘束のまま残す。
         if fault['attitude_kind'] not in ('unknown_vertical_prior','unresolved_orientation'):continue
         trace=max(fault['traces'],key=len);anchor=np.array(trace[len(trace)//2]);_,_,normal=nearest_foot(trace,anchor)
         ensemble=analogue_ensemble(normal,anchor,seeds)
@@ -111,7 +110,7 @@ def constrain(faults,sections):
             direction=normal*(1 if normal@expected>=0 else -1)
             for case in ['reference','shallow','deep']:ensemble[case]['dip_azimuth_deg']=float(np.degrees(np.arctan2(direction[0],direction[1]))%360)
             ensemble['direction_ambiguous']=False;ensemble['direction_basis']='published direction; numerical angle inferred from section evidence'
-        # Resolve dip side only where kinematics + fault type permit it.
+        # 断層運動と断層の種類から決められる場合だけ、傾斜側を確定する。
         for obs in fault.get('gsi_kinematic_constraints',[]):
             if ensemble is None:continue
             if 'dip_side_azimuth_deg' in obs:
@@ -120,7 +119,7 @@ def constrain(faults,sections):
                 for case in ['reference','shallow','deep']:ensemble[case]['dip_azimuth_deg']=float(np.degrees(np.arctan2(direction[0],direction[1]))%360)
                 ensemble['direction_ambiguous']=False;ensemble['gsi_direction_basis']=obs['id']
             else:
-                # A downthrow side alone permits normal AND reverse solutions.
+                # 低下側だけでは、正断層と逆断層の両方の解が残る。
                 ensemble['direction_ambiguous']=True
                 ensemble['deep']['dip_azimuth_deg']=(ensemble['reference']['dip_azimuth_deg']+180)%360
                 ensemble['gsi_motion_basis']=obs['id'];ensemble['kinematic_alternatives']=obs['dip_sense_alternatives']
