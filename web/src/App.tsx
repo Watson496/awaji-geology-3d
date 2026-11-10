@@ -1,5 +1,6 @@
 import { dataUrl } from "./data-url.js";
 import { SectionDiagram, type Diagram } from "./SectionDiagram";
+import { Slider } from "./Slider";
 import {
 	ActionIcon,
 	Accordion,
@@ -14,7 +15,6 @@ import {
 	Paper,
 	SegmentedControl,
 	Select,
-	Slider,
 	Stack,
 	Table,
 	Text,
