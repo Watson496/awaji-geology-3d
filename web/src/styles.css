@@ -623,6 +623,18 @@ button {
 	}
 }
 
+.mantine-Slider-label.slider-label-anchor {
+	inset: 0;
+	transform: none;
+	padding: 0;
+	background: transparent;
+}
+.slider-label-target {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .inspector-shell {
 	width: 100%;
 	height: 100%;
