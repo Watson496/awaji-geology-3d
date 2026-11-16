@@ -1,8 +1,8 @@
-"""Auxiliary basin/basement envelope on land AND the surrounding marine domain.
+"""陸域と周囲の海域で、堆積盆・基盤の補助的な包絡面を求める。
 
-Marine facies stay unclassified. This envelope constrains onshore package choice
-through the same finite-fault barrier operator. Sea-level is the computational
-ceiling offshore, NOT a fabricated measured seabed.
+海域の岩相は未分類のまま残す。同じ有限断層の障壁演算子を使い、
+この包絡面で陸域の地質群の選択を制約する。海域の計算上端は海面とし、
+実測の海底面とはみなさない。
 """
 import json
 import numpy as np
@@ -26,8 +26,8 @@ def _envelope(meta,s,scenario,catalog):
  ii,jj=np.nonzero(s['island']);kk=domain.sum(axis=2)[ii,jj]-1;ids=index[ii,jj,kk];fixed[ids]=True
  _,packages=topology(meta);target[ids]=np.where(packages[s['surface'][ii,jj]]<2,1.,-1.)
  tree=cKDTree(coords);fit=[];shift={'reference':0,'shallow':300,'deep':-300}[scenario]
- # Points on a contour are correlated; all carry the same positional/depth
- # uncertainty and are shifted together, not treated as independent precision.
+ # 同じ等深線上の点は相関するため、共通の位置・深度の不確実性を与えて一緒に動かす。
+ # 各点を独立した精度の情報として扱わない。
  for pick in marine['picks']:
   p=np.array(pick['xyz']);p[2]+=shift
   for dzpick,value in [(500,-1),(0,0),(-500,1)]:
@@ -42,8 +42,8 @@ def _envelope(meta,s,scenario,catalog):
  if status:raise RuntimeError(f'{scenario}: marine basement envelope failed to converge')
  values=target.copy();values[free]=x;grid=np.zeros(domain.shape,np.float32);grid[domain]=values
  folder=ROOT/'web/data'/scenario;grid.tofile(folder/'basin-envelope.bin')
- # Display the inferred roof only near the digitized contours. This is a
- # structural surface, not a new geological legend unit.
+ # 推定上面は数値化した等深線の近くにだけ表示する。
+ # 構造面であり、新しい地質凡例の単元は作らない。
  xx,yy=np.meshgrid(s['xs'],s['ys'],indexing='ij');dist=cKDTree(np.array([p['xyz'][:2] for p in marine['picks']])).query(np.c_[xx.ravel(),yy.ravel()])[0].reshape(nx,ny)
  display=domain&(~s['island'])[...,None]&(dist<4000)[...,None]
  if np.any(grid[display]<0) and np.any(grid[display]>0):

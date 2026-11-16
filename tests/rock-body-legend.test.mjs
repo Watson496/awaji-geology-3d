@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { bodyAgeRank, groupColors } from "../web/src/rock-body-legend.js";
 
-test("legend order puts younger periods above older periods and unknown last", () => {
+test("凡例は若い年代から順に並べ、年代不明を最後に置く", () => {
 	const expected = [
 		"H2_or",
 		"H_sad",
@@ -23,7 +23,7 @@ test("legend order puts younger periods above older periods and unknown last", (
 	);
 });
 
-test("group palette combines same colours across identities and uses the selected scenario volume", () => {
+test("グループの配色は岩体をまたぐ同色を統合し、選択したシナリオの体積を使う", () => {
 	const members = [
 		{
 			color: "#ff0000",

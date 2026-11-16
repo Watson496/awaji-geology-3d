@@ -370,7 +370,7 @@ function Plan({
 		</svg>
 	);
 }
-// Keep intermediate empty input while editing a controlled numeric value.
+// 数値の編集中は、一時的な空欄を許容する。
 function ModelNumberInput({
 	value,
 	onNumberChange,
@@ -390,8 +390,8 @@ function ModelNumberInput({
 				if (typeof next === "number") onNumberChange(next);
 			}}
 			onInput={(event) => {
-				// Keep whole-value edits (including paste after an external slider/batch update)
-				// synchronized even when the formatted input retains an older numeric cache.
+				// スライダーや一括更新後の貼り付けも反映できるよう、
+				// 書式付き入力の数値キャッシュに頼らず、入力値全体を読み取る。
 				const text = event.currentTarget.value.replace(/[%×\s]/g, "");
 				if (!/^-?\d+(?:\.\d+)?$/.test(text)) return;
 				const parsed = Number(text);

@@ -1,9 +1,8 @@
-"""Present-day fault-bounded scalar interpolation, with auditable finite surfaces.
+"""有限断層面を境界とする、現在の地質単元のスカラー場を補間する。
 
-Solve a screened discrete Laplace problem for each ORIGINAL geological unit.
-Edges intersecting a finite fault surface have zero conductance. No displacement
-field or event slip is applied. GemPy fields supply a weak, explicitly assumed
-prior, while present-day surface labels are Dirichlet boundary conditions.
+原地質単元ごとに反応項付きの離散Laplace方程式を解く。
+有限断層面と交差する辺の伝導度は0とし、変位場や地震時のすべりは適用しない。
+GemPy場を仮定に基づく弱い事前分布、現在の地表ラベルをDirichlet境界条件とする。
 """
 import argparse
 import hashlib
@@ -29,10 +28,10 @@ WEB=ROOT/'web/data'
 SCENARIOS=['reference','shallow','deep']
 
 def offset_at(depth,profile,delta=0):
-    """Integrate cot(dip) from the trace; dips vary linearly between knots."""
+    """断層線からcot(dip)を積分する。節点間の傾斜は線形に変化させる。"""
     depth=np.maximum(np.asarray(depth,float),0)
     knots=np.array(profile,float);total=np.zeros_like(depth)
-    # 16 midpoint quadrature samples per interval, adequate below grid resolution.
+    # 格子より細かな精度を得るため、各区間を16分割して中点則で積分する。
     for (a,da),(b,db) in zip(knots[:-1],knots[1:]):
         length=np.clip(depth-a,0,b-a)
         for k in range(16):
@@ -47,7 +46,7 @@ def fault_triangles(fault,zmin,scenario='reference'):
     if ensemble:
         orientation=ensemble[scenario];profile=[[0,orientation['dip_deg']],[4000,orientation['dip_deg']]];az=np.radians(orientation['dip_azimuth_deg']);delta=0
     else:
-        # A directly constrained curve can have no separate published prior.
+        # 直接拘束された曲線には、別の公表済み事前分布がない場合がある。
         if profile is None:profile=[[0,fault['section_attitudes'][0]['dip_deg']],[4000,fault['section_attitudes'][0]['dip_deg']]]
         az=np.radians(fault.get('dip_azimuth_deg',0));delta={'reference':0,'shallow':-1,'deep':1}[scenario]*fault.get('angle_sensitivity_deg',0)
     direction=np.array([np.sin(az),np.cos(az)]);triangles=[]
@@ -73,7 +72,7 @@ def fault_triangles(fault,zmin,scenario='reference'):
     return np.asarray(triangles)
 
 def intersection_mask(origins,direction,triangle):
-    """Möller–Trumbore finite segment/triangle intersection, vectorized."""
+    """Möller–Trumbore法で有限線分と三角形の交差をベクトル化して計算する。"""
     a,b,c=triangle;e1=b-a;e2=c-a;h=np.cross(direction,e2);det=e1@h
     if abs(det)<1e-10:return np.zeros(len(origins),bool)
     s=origins-a;u=(s@h)/det;q=np.cross(s,e1);v=(q@direction)/det;t=(q@e2)/det
@@ -104,7 +103,7 @@ def barriers(shape,origin,spacing,faults,zmin,scenario='reference',domain=None):
     return closed,counts
 
 def build_system(rock,closed,spacing,screen=.02):
-    """Symmetric graph operator: edges exist only between rock cells, never across faults."""
+    """岩石セル間だけに辺を持つ対称グラフ演算子。断層をまたぐ辺は持たない。"""
     count=int(rock.sum());index=np.full(rock.shape,-1,np.int32);index[rock]=np.arange(count)
     rows=[];cols=[];weights=[];degree=np.zeros(count,np.float32)
     scale=min(spacing[:2])
@@ -123,7 +122,7 @@ def solve_fields(meta,s,catalog,scenario,closed,counts):
     z=meta['zmin']+(np.arange(nz)+.5)*dz
     rock=s['island'][...,None]&(z[None,None,:]-dz/2<s['dem'][...,None])
     offdiag,degree,index=build_system(rock,closed,np.array([*meta['spacing_m'],dz]))
-    # Dirichlet boundary at the top rock cell of every land column.
+    # 陸域の各列の最上部の岩石セルをDirichlet境界とする。
     top=np.zeros_like(rock);ii,jj=np.nonzero(s['island']);kk=rock.sum(axis=2)[ii,jj]-1;top[ii,jj,kk]=True
     fixed=top[rock];free=~fixed;free_ids=np.flatnonzero(free)
     lam=np.float32(.02)
@@ -165,8 +164,7 @@ def solve_fields(meta,s,catalog,scenario,closed,counts):
         win=score>best;second=np.maximum(second,np.minimum(score,best));best[win]=score[win];chosen[win]=unit['id']
         audits.append({'source_symbol':unit['key'],'iterations':iterations[0],'relative_residual':residual,'prior_signature':str(cache['signature'])})
         print(scenario,unit['key'],'iterations',iterations[0],'residual',round(residual,6),flush=True)
-    # Shared envelopes are inferred per geological package, not selected by a
-    # global competition between 22 lithology potentials.
+    # 共通の包絡面は地質群ごとに推定し、22岩相のポテンシャルの大域的な競争で選ばない。
     package_scores=np.zeros((*rock.shape,len(package_defs)),np.float32)
     for gi,package in enumerate(package_defs):
         boundary=np.where(np.isin(truth,package['unit_ids']),1.,-1.).astype(np.float32)
@@ -179,8 +177,8 @@ def solve_fields(meta,s,catalog,scenario,closed,counts):
         if status:raise RuntimeError(f'{scenario}/{package["id"]}: shared envelope did not converge')
         values=np.empty(nrock,np.float32);values[free]=solution;values[fixed]=boundary
         field=np.zeros(rock.shape,np.float32);field[rock]=values;package_scores[...,gi]=field
-    # Marine acoustic basement constrains the shared pre-Cenozoic envelope,
-    # without pretending it identifies a particular granite or marine facies.
+    # 海域の音響基盤は新生代以前の共通包絡面を制約するが、
+    # 特定の花崗岩や海域の岩相の識別には使わない。
     for gi in range(len(package_defs)):package_scores[...,gi]+=.35*marine_grid*(1 if gi<2 else -1)
     surface_package=package_map[s['surface']]
     package_scores,cover_audit=constrain_packages(package_scores,package_defs,z,s["dem"],rock,scenario)
@@ -191,17 +189,17 @@ def solve_fields(meta,s,catalog,scenario,closed,counts):
         for uid in package['unit_ids']:
             score=native_scores[uid];win=mask&(score>best)
             second[mask]=np.maximum(second[mask],np.minimum(score[mask],best[mask]));best[win]=score[win];chosen[win]=uid
-    # Intrusive overlap resolution follows supported local phase relationships,
-    # rather than treating foliated and massive facies as a sedimentary stack.
+    # 貫入岩の重複は、根拠のある局所的な岩相関係に従って解消する。
+    # 片状岩相と塊状岩相に堆積層としての順序を与えない。
     symbols={u['key']:u['id'] for u in meta['units']}
     intrusion_changes=0
     for younger,older in [('K21_pim_a',['K21_pan_a','K21_pin_a']),('K21_pam_a',['K21_pan_a','K21_pin_a','K21_pim_a'])]:
         uid=symbols[younger];mask=(package_grid[rock]==0)&np.isin(chosen,[symbols[k] for k in older])&(native_scores[uid]>.25)&~fixed
         intrusion_changes+=int(mask.sum());chosen[mask]=uid
-    # Original present-day surface labels remain exact boundary conditions.
+    # 現在の地表の原ラベルは、厳密な境界条件として保持する。
     support=section_support(meta,s,json.loads((ROOT/'data/structure/sections.json').read_text())['sections'])[rock]
     extrapolated=chosen.copy()
-    # Support is provenance/uncertainty, NOT a knife cutting rock bodies away.
+    # 根拠の強さは出典・不確実性を表し、岩体を切り捨てる条件にはしない。
     chosen[fixed]=truth
     volume=np.zeros(rock.shape,np.uint8);volume[rock]=chosen
     substrate,substrate_packages,substrate_audit,substrate_status=infer_substrate(meta,s,scenario,rock,top,offdiag,degree,mapped_picks,closed,marine_grid,z)

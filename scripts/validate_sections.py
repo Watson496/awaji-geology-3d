@@ -1,4 +1,4 @@
-"""Reproduction of fitted source sections; never independent geological accuracy."""
+"""適合に使った原断面の再現を検査する。独立した地質精度の評価ではない。"""
 import json
 import numpy as np
 from scipy.spatial import cKDTree

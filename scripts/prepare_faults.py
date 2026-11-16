@@ -1,7 +1,7 @@
-"""Curate present-day fault geometry; never apply an earthquake slip model.
+"""現在の断層形状を整理し、地震時のすべりモデルは適用しない。
 
-GSJ 50k traces retain their actual disconnected parts. HERP endpoint lines are
-explicit regional approximations, not invented high-resolution mapping.
+GSJの5万分の1地質図の断層線は、分離した各部分をそのまま保持する。
+地震調査研究推進本部の端点を結ぶ線は、広域の近似として扱う。
 """
 import json
 import hashlib
@@ -22,7 +22,7 @@ def build():
     grouped = {}
     for i,t in enumerate(constraints['fault_traces']):
         name = t['name']
-        # Unnamed traces must not be joined into a single fictional fault.
+        # 名称のない断層線を、単一の架空の断層に結合しない。
         key = name if name not in ('断層','推定断層') else f'{t["source"]}-{name}-{i+1}'
         grouped.setdefault(key,[]).append(t)
     profiles = {
@@ -45,7 +45,7 @@ def build():
             'attitude_kind':'published_direction_with_explicit_angle_or_extrapolation_prior' if known else 'unknown_vertical_prior',
             'notes':note,'source':source,'horizontal_uncertainty_m':100,
             'angle_sensitivity_deg':5 if name in ['野島断層','浅野断層'] else (10 if known else 20)})
-    # Fit the previously unknown Nakamochi dip to interpreted A-B fault picks.
+    # 中持断層の傾斜は、A-B断面の解釈済み断層点に適合させる。
     sections=json.loads((DEST.parent/'sections.json').read_text())['sections']
     for section in sections:sources[section['id']]={'url':section['source_url'],'sha256':section['source_sha256'],'figure':section['name']}
     for fault in faults:

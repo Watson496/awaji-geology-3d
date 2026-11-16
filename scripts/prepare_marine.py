@@ -1,4 +1,4 @@
-"""Digitized acoustic-basement contours, not fabricated seamless lithology labels."""
+"""音響基盤の等深線を数値化し、シームレス地質図の岩相ラベルは割り当てない。"""
 import json,hashlib
 import numpy as np
 from pyproj import Transformer
@@ -10,10 +10,10 @@ def build():
  raw=fetch(URL,RAW/'osaka-basement-2000.pdf')
  previous=ROOT/'data/structure/marine.json'
  if previous.exists() and json.loads(previous.read_text())['source_sha256']!=hashlib.sha256(raw).hexdigest():raise ValueError('Marine source changed; calibration must be reviewed')
- # Original PDF page 17 embedded image (2480 x 3507), Fig.22.
- # Map frame/ticks: lon 134°50' at x489, 135°30' at x2192;
- # lat 34°40' at y1881, 34°20' at y2909. Tokyo datum is an
- # explicit assumption for this pre-2002 map; horizontal sigma includes it.
+ # 原PDFの17ページの埋め込み画像（2480×3507）、図22を使う。
+ # 地図枠の目盛りは、東経134度50分がx489、135度30分がx2192、
+ # 北緯34度40分がy1881、34度20分がy2909に対応する。
+ # 2002年以前の地図として日本測地系を仮定し、水平位置の標準偏差にも織り込む。
  transform=Transformer.from_crs(4301,32653,always_xy=True)
  picks=[]
  for i,(x,y,depth) in enumerate([(772,2792,1500),(760,2710,1500),(760,2620,1500),(849,2800,1000),(844,2730,1000)]):

@@ -1,8 +1,7 @@
-"""Qualitative fault kinematics from GSI glyphs plus the 2014 guidebook.
+"""国土地理院の記号と2014年の解説書から、断層運動の定性的な制約を得る。
 
-Ticks mean DOWNTHROW, not dip direction. Only a known normal/reverse sense
-permits converting this into a dip-side constraint. Marker positions do not
-replace any source fault vertices. Opposite marine tick sides stay separate.
+短線記号は低下側を示す。傾斜側への変換は、正断層・逆断層の区別が既知の場合に限る。
+記号の位置で元の断層頂点を置き換えない。海域で短線が反対側にある断層は分けて扱う。
 """
 import json,hashlib
 import numpy as np

@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { sampleUnit, faultSectionSegments } from "../web/src/section-view.js";
-test("category interpolation never invents an intermediate geological ID", () => {
+test("カテゴリの補間で中間の地質単元IDを作らない", () => {
 	const meta = {
 		shape: [2, 1],
 		nz: 1,
@@ -15,7 +15,7 @@ test("category interpolation never invents an intermediate geological ID", () =>
 		);
 	assert.equal(sampleUnit(new Uint8Array([1, 22]), meta, -2, 0.5, 0.5), 0);
 });
-test("fault intersection follows an arbitrary vertical section and finite bounds", () => {
+test("断層の交線は任意の鉛直断面と有限の範囲に従う", () => {
 	const tri = [
 		[
 			[5, 0, -10],
@@ -54,7 +54,7 @@ test("fault intersection follows an arbitrary vertical section and finite bounds
 import * as THREE from "three";
 import { smoothSectionMeshes } from "../web/src/section-view.js";
 import { clipLineGeometry } from "../web/src/clip-geometry.js";
-test("arbitrary slice uses the smooth body geometry and preserves section area", () => {
+test("任意断面は滑らかな岩体形状を使い、断面積を保つ", () => {
 	const box = new THREE.BoxGeometry(2, 2, 2);
 	box.translate(0, -1, 0);
 	const meshes = smoothSectionMeshes(
@@ -78,7 +78,7 @@ test("arbitrary slice uses the smooth body geometry and preserves section area",
 	}
 	assert.ok(Math.abs(area - 2 * Math.sqrt(5)) < 1e-4);
 });
-test("fault traces are clipped into GLB as well as triangle meshes", () => {
+test("断層線は三角形メッシュと同様にGLBでも切り取られる", () => {
 	const g = new THREE.BufferGeometry();
 	g.setAttribute(
 		"position",
@@ -90,7 +90,7 @@ test("fault traces are clipped into GLB as well as triangle meshes", () => {
 	assert.equal(result.attributes.position.count, 2);
 	assert.equal(result.attributes.position.getX(1), 0);
 });
-test("slice through mesh vertices keeps one closed contour", () => {
+test("メッシュの頂点を通る切断でも1つの閉じた輪郭を保つ", () => {
 	const box = new THREE.BoxGeometry(2, 2, 2);
 	const meshes = smoothSectionMeshes(
 		[{ unit: 1 }],
@@ -114,7 +114,7 @@ test("slice through mesh vertices keeps one closed contour", () => {
 	assert.ok(Math.abs(area - 4 * Math.sqrt(2)) < 1e-4);
 });
 
-test("unfolded sections preserve distance and elevation across a bend", async () => {
+test("展開した断面は屈曲部でも距離と標高を保つ", async () => {
 	const { flattenSectionMeshes } = await import("../web/src/section-view.js");
 	const g = new THREE.BufferGeometry();
 	g.setAttribute(
@@ -138,7 +138,7 @@ test("unfolded sections preserve distance and elevation across a bend", async ()
 	);
 });
 
-test("section opacity uses 0 for hidden and 100 for visible", () => {
+test("断面の不透明度は非表示で0、表示で100を使う", () => {
 	const box = new THREE.BoxGeometry(2, 2, 2),
 		material = new THREE.MeshBasicMaterial();
 	const slice = (opacity) =>

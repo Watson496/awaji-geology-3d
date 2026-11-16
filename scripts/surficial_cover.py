@@ -1,8 +1,8 @@
-"""Finite surficial-cover hypotheses, applied inside package inference.
+"""地質群の推定に、有限の厚さを持つ表層被覆の仮説を適用する。
 
-Thickness is measured below local DEM, never as an absolute elevation cutoff.
-Published local sections are evidence for scale, NOT island-wide upper bounds.
-The top observed cell remains fixed; a 50 m grid cannot resolve 2–10 m layers.
+厚さは局所的なDEMからの深さで測り、絶対標高で区切らない。
+公表断面は局所的な厚さの尺度に使い、島全体の上限とはしない。
+地表の観測セルは固定する。50m格子では2〜10mの層を解像できない。
 """
 import hashlib,json
 from pathlib import Path
@@ -32,7 +32,7 @@ def audit_volume(volume,meta,dem,scenario):
         rule=policy()['units'].get(u['key'])
         if rule is None:continue
         m=volume==u['id'];limit=rule['scenario_thickness_m'][scenario]
-        # A ground observation can lie in one unresolved cell, never a deep column.
+        # 地表の観測は、未解像の1セル内に対応しうるが、深い列全体には対応させない。
         if np.any(m&(depth>max(limit,dz/2)+1e-5)):raise ValueError(f'Surficial unit escaped thickness prior: {scenario}/{u["key"]}')
         result[u['key']]={'prior_thickness_m':limit,'maximum_cell_center_depth_m':float(np.max(depth[m])) if m.any() else None,'cell_bottom_depth_upper_bound_m':float(np.max(depth[m])+dz/2) if m.any() else None,'cells':int(m.sum()),'cells_below_150m':int((m&(depth>150)).sum()),'note':'50m discretization; not a measured or sub-grid thickness'}
     return result

@@ -1,8 +1,8 @@
-"""Use unchanged official line vertices; never digitize endpoint chords or map pixels.
+"""公式の断層線の頂点を保持し、端点間の直線や地図の画素から線を作らない。
 
-Seamless lines and the two GeomapNavi overlays are separate source layers.
-Only source-matched geological faults enter the structural interpolation. Active
-fault overlays are a regional reference, not a second invented set of barriers.
+シームレス地質図の線と2つのGeomapNavi重ね合わせ図は、別々の出典として扱う。
+構造補間に使うのは出典と対応づけた地質断層だけとする。
+活断層の重ね合わせ図は広域の参照用とし、追加の障壁にはしない。
 """
 import copy,gzip,hashlib,io,json,zipfile
 import numpy as np
@@ -24,7 +24,7 @@ def build(previous):
         if key in pinned and pinned[key]['sha256']!=digest:raise ValueError(f'Official fault source changed: {key}; source review required')
         return digest
     hp=np.load(OUT/'surface.npz')['high_positions'];tree=cKDTree(hp[:,:2])
-    # Original 50k names/attitudes are a crosswalk, never replacement geometry.
+    # 5万分の1地質図の名称・姿勢は対応づけに使い、形状の置き換えには使わない。
     references=[(f,shapely.union_all([LineString(np.array(t)[:,:2]) for t in f['traces']])) for f in previous if f['trace_kind']=='mapped_50k' and f['name'] not in ('断層','推定断層')]
     def project(line,transform=FWD):
         points=np.array([transform.transform(*p[:2]) for p in line.coords]);distance,near=tree.query(points)
@@ -40,7 +40,7 @@ def build(previous):
         transform=Transformer.from_crs(4612,32653,always_xy=True)
         for index,record in enumerate(reader.iterShapeRecords()):
             attr=record.record.as_dict();kind=attr['Major_Code']
-            if kind not in ('2','4','6'):continue  # flexures are NOT faults
+            if kind not in ('2','4','6'):continue  # 撓曲を断層に含めない
             original=shape(record.shape.__geo_interface__)
             for part,line in enumerate(parts(original.intersection(region))):
                 trace=project(line,transform);projected=LineString(np.array(trace)[:,:2]);sample=shapely.line_interpolate_point(projected,np.linspace(0,1,9),normalized=True)

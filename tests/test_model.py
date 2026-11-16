@@ -1,4 +1,4 @@
-"""Scientific/data contract checks; no network needed."""
+"""科学的な前提とデータの契約を、ネットワーク接続なしで検査する。"""
 import json
 from pathlib import Path
 import sys
@@ -21,7 +21,7 @@ class InputConventions(unittest.TestCase):
         self.assertTrue(np.isnan(z[0, 2:]).all())
 
     def test_right_hand_rule_and_unit_normal(self):
-        # E-W strike 90 -> south dip. Upward normal has a south horizontal component.
+        # 東西走向90度は南傾斜に対応し、上向き法線の水平成分は南を向く。
         n = normal_from_strike(90, 30)
         np.testing.assert_allclose(n, [0, -.5, np.sqrt(3) / 2], atol=1e-12)
         np.testing.assert_allclose(normal_from_strike(0, 90), [1, 0, 0], atol=1e-12)

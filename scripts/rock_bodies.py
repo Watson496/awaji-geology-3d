@@ -1,9 +1,8 @@
-"""Separate mapped geological identities from the seamless lithology classes.
+"""地質図上の岩体の識別と、シームレス地質図の岩相区分を分ける。
 
-This is an attribution of an existing inferred lithology volume, NOT a new
-estimate of intrusion/formation boundaries. Surface seeds require agreement
-between both maps. Transfer stays inside the same native class and cannot
-cross a closed fault edge. Unsupported or competing identities stay unassigned.
+既存の岩相推定に岩体を帰属させる処理であり、貫入境界や地層境界は再推定しない。
+地表の起点には両地質図の一致を要求する。帰属の伝播は同じ原岩相内に限り、
+閉じた断層辺を越えない。根拠のない岩体や競合する岩体は未割当のまま残す。
 """
 import hashlib
 import json
@@ -16,13 +15,12 @@ from pyproj import Transformer
 from prepare import ROOT, read_layer
 
 WEB = ROOT / 'web/data'
-MAX_DISTANCE = 2000.  # Attribution scenario, not an observed body extent.
-MIN_MARGIN = 200.  # Do not invent a contact at a nearest-source bisector.
+MAX_DISTANCE = 2000.  # 帰属のシナリオであり、観測された岩体の範囲ではない。
+MIN_MARGIN = 200.  # 最寄りの起点間の二等分線に、根拠のない接触面を作らない。
 MAP_FWD = Transformer.from_crs(4612,32653,always_xy=True)  # geo_A.prj: JGD2000
 
-# Explicit lithological crosswalk. A map overlap alone is insufficient evidence.
-# Same named formation across the two sheets shares an identity; facies retain
-# their original seamless class, colour and source ID.
+# 地図の重なりだけでは岩相の対応を確定できないため、対応関係を明示する。
+# 2図幅にまたがる同名の地層は識別を共有し、岩相は原区分・色・出典IDを保持する。
 MAPPED = {
     'akashi': {
         'Kt': ('kariya', '仮屋累層', ['Q1-21_sn']),
@@ -89,8 +87,8 @@ def seed_catalog(meta, surface):
             for native_key in allowed:
                 uid=by_key[native_key]
                 mask=inside & (surface['surface']==uid) & surface['island']
-                # Single-cell coincidences near conflicting map boundaries are
-                # not enough to establish a new cross-map facies identity.
+                # 地図境界が食い違う付近の単一セルの一致だけでは、
+                # 図幅をまたぐ岩相の対応を確定しない。
                 if mask.sum()<3: continue
                 identity=(key,uid);names[identity]=name
                 seeds[identity]=seeds.get(identity,np.zeros(xx.shape,bool))|mask
@@ -110,7 +108,7 @@ def seed_catalog(meta, surface):
 
 
 def attribute(volume, bodies, seeds, closed, spacing, max_distance=MAX_DISTANCE, margin=MIN_MARGIN):
-    """Return separate body IDs without changing any native lithology IDs."""
+    """原岩相IDを変えずに、別の岩体IDを返す。"""
     result=volume.astype(np.uint16);shape=volume.shape
     top=volume.shape[2]-1-np.argmax((volume!=0)[...,::-1],axis=2)
     for uid in sorted({b['source_unit'] for b in bodies if b['attribution']=='interpreted'}):
@@ -133,7 +131,7 @@ def attribute(volume, bodies, seeds, closed, spacing, max_distance=MAX_DISTANCE,
             dist=dijkstra(graph,directed=False,indices=source,min_only=True,limit=max_distance)
             better=dist<best;second=np.where(better,best,np.minimum(second,dist))
             best=np.minimum(best,dist);winner[better]=body['id']
-        # An infinity on the runner-up means no competing identity within range.
+        # 第2候補が無限大なら、範囲内に競合する岩体はない。
         gap=np.full_like(best,np.inf)
         np.subtract(second,best,out=gap,where=np.isfinite(best))
         supported=np.isfinite(best)&(gap>margin)
